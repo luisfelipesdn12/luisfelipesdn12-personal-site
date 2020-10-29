@@ -5,29 +5,95 @@
     <title>Luis Felipe - Code Development</title>
     <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
 </head>
 <body>
-    <section class="bg-indigo-100 bg-opacity-50 p-3 pb-20">
-        <nav class="flex justify-between items-center my-4 container">
-            <a href="/">
-              <img src="./assets/favicon.png" alt="logo" class="w-10 shadow-md rounded-full">
-            </a>
-            <ul class="flex">
-                <li>
-                    <a href="/projects">
-                        <button class="bg-white text-gray-900 font-bold py-2 px-4 rounded-full shadow-md"
-                        href="/projects">
-                            Projects
-                        </button>
-                    </a>
+    <section class="bg-indigo-100 bg-opacity-50 p-3 pb-20 sm:grid sm:grid-cols-8 xl:grid-cols-6">
+        <div class="mx-4 sm:col-start-2 sm:col-end-8 xl:col-end-6">
+            <nav class="flex justify-between items-center my-4 container">
+                <a href="/">
+                  <img src="./assets/favicon.png" alt="logo" class="w-10 shadow-md rounded-full">
+                </a>
+                <ul class="flex">
+                    <li>
+                        <a href="/projects">
+                            <button class="bg-white text-gray-900 font-bold py-2 px-4 rounded-full shadow-md"
+                            href="/projects">
+                                Projects
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <h1 class="font-bold text-gray-900 text-center mt-16 text-4xl">Hello, I'm Luis Felipe!</h1>
+            <p class="text-gray-700 text-center text-2xl">
+                I've studying computer science for a while, and my main languages are <span class="text-blue-700 font-semibold">Python</span>, <span class="text-blue-700 font-semibold">Java</span> and <span class="text-blue-700 font-semibold">Go</span>.
+            </p>
+        </div>
+    </section>
+    <section class="p-3 py-16 ml-3 mr-3 sm:grid sm:grid-cols-8 xl:grid-cols-6">
+        <div class="mx-4 sm:col-start-2 sm:col-end-8 xl:col-end-6">
+            <h1 class="font-bold text-gray-900 text-left text-4xl">Languages:</h1>
+            <p class="text-gray-700 text-left text-2xl">
+                Click in the language to see my repositories with it.
+            </p>
+            <ul class="mt-8 md:flex md:flex-wrap" style="justify-content: space-between;" id="languages-list">
+                <li class="rounded bg-indigo-100 bg-opacity-0 overflow-hidden shadow p-3 mb-3 mock-language-card md:w-1/2"
+                style="margin-right: -5px; margin-left: -5px;">
+                    <div class="flex">
+                        <svg width="2.5rem" height="2.5rem" class="rounded-full w-10 mr-6 mb-3 shadow animate-pulse">
+                            <rect width="2.5rem" height="2.5rem" style="fill: #edf2f7;" />
+                        </svg>
+                        <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 30%;"></span>
+                    </div>
+                    <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 100%;"></span>
+                    <br>
+                    <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 40%;"></span>
+                </li>
+                <li class="rounded bg-indigo-100 bg-opacity-0 overflow-hidden shadow p-3 mb-3 mock-language-card md:w-1/2"
+                style="margin-right: -5px; margin-left: -5px;">
+                    <div class="flex">
+                        <svg width="2.5rem" height="2.5rem" class="rounded-full w-10 mr-6 mb-3 shadow animate-pulse">
+                            <rect width="2.5rem" height="2.5rem" style="fill: #edf2f7;" />
+                        </svg>
+                        <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 30%;"></span>
+                    </div>
+                    <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 100%;"></span>
+                    <br>
+                    <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 40%;"></span>
+                </li>
+                <li class="rounded bg-indigo-100 bg-opacity-0 overflow-hidden shadow p-3 mb-3 mock-language-card md:w-1/2"
+                style="margin-right: -5px; margin-left: -5px;">
+                    <div class="flex">
+                        <svg width="2.5rem" height="2.5rem" class="rounded-full w-10 mr-6 mb-3 shadow animate-pulse">
+                            <rect width="2.5rem" height="2.5rem" style="fill: #edf2f7;" />
+                        </svg>
+                        <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 30%;"></span>
+                    </div>
+                    <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 100%;"></span>
+                    <br>
+                    <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 40%;"></span>
+                </li>
+                <li class="rounded bg-indigo-100 bg-opacity-0 overflow-hidden shadow p-3 mb-3 mock-language-card md:w-1/2"
+                style="margin-right: -5px; margin-left: -5px;">
+                    <div class="flex">
+                        <svg width="2.5rem" height="2.5rem" class="rounded-full w-10 mr-6 mb-3 shadow animate-pulse">
+                            <rect width="2.5rem" height="2.5rem" style="fill: #edf2f7;" />
+                        </svg>
+                        <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 30%;"></span>
+                    </div>
+                    <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 100%;"></span>
+                    <br>
+                    <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 40%;"></span>
                 </li>
             </ul>
-        </nav>
-        <h1 class="font-bold text-gray-900 text-center mt-16 text-4xl">Hello, I'm Luis Felipe!</h1>
-        <p class="text-gray-700 text-center text-2xl">
-            I've studying computer science for a while, and my main languages are Python, Java and Go.
-        </p>
+        </div>
     </section>
+
+    <script type="module">
+        import { fillLanguageList } from './js/utils.js';
+
+        fillLanguageList();
+    </script>
 </body>
 </html>
