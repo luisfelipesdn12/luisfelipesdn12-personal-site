@@ -1,6 +1,9 @@
 import { USERNAME, LANGUAGES } from './constants.js';
 
 export function getGithubLanguageSearchURL(language) {
+    if (language == "C/C++") {
+        return "https://github.com/luisfelipesdn12/Numeros-Primos";
+    }
     return "https://github.com/search?l=" + language+ "&q=user%3A" + USERNAME;
 }
 
