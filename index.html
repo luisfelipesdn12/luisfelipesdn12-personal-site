@@ -25,17 +25,28 @@
                     </li>
                 </ul>
             </nav>
-            <h1 class="font-bold text-gray-900 text-center mt-16 text-4xl">Hello, I'm Luis Felipe!</h1>
-            <p class="text-gray-700 text-center text-2xl">
-                I've been studying computer science for a while, and my main languages are <span class="text-blue-700 font-semibold">Python</span>, <span class="text-blue-700 font-semibold">Java</span> and <span class="text-blue-700 font-semibold">Go</span>.
+            <h1 class="font-bold text-gray-900 text-center mt-16 text-4xl hidden" id="hero-greeting"/>
+            <h1 class="font-bold text-gray-900 text-center mt-16 text-4xl" id="mock-hero-greeting">
+                <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 40%;"></span>
+            </h1>
+            <hr class="py-5 invisible">
+            <p class="text-gray-700 text-center text-2xl hidden" id="hero-sentence"/>
+            <p class="text-gray-700 text-center text-2xl" id="mock-hero-sentence">
+                <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 100%;"></span>
+                <br>
+                <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 40%;"></span>
             </p>
         </div>
     </section>
     <section class="p-3 py-16 ml-3 mr-3 sm:grid sm:grid-cols-8 xl:grid-cols-6">
         <div class="mx-4 sm:col-start-2 sm:col-end-8 xl:col-end-6">
-            <h1 class="font-bold text-gray-900 text-left text-4xl">Languages:</h1>
-            <p class="text-gray-700 text-left text-2xl">
-                Click in the language to see my repositories with it.
+            <h1 class="font-bold text-gray-900 text-left text-4xl hidden" id="languages-title"/>
+            <h1 class="font-bold text-gray-900 text-left text-4xl" id="mock-languages-title">
+                <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 25%;"></span>
+            </h1>
+            <p class="text-gray-700 text-left text-2xl hidden" id="languages-description"/>
+            <p class="text-gray-700 text-left text-2xl" id="mock-languages-description"/>
+                <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 65%;"></span>
             </p>
             <ul class="mt-8 md:flex md:flex-wrap" style="justify-content: space-between;" id="languages-list">
                 <li class="rounded bg-indigo-100 bg-opacity-0 overflow-hidden shadow p-3 mb-3 mock-language-card md:w-1/2"
@@ -91,9 +102,10 @@
     </section>
 
     <script type="module">
-        import { fillLanguageList } from './js/utils.js';
+        import { fillHeroSection, fillLanguageSection } from './js/utils.js';
 
-        fillLanguageList();
+        fillHeroSection();
+        fillLanguageSection();
     </script>
 </body>
 </html>
