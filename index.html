@@ -3,20 +3,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luis Felipe - Code Development</title>
-    <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
-    <link rel="icon" href="./assets/initial-state-circle.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/initial-state-circle.svg" type="image/x-icon">
 
+    <!-- Tailwind CSS -->
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+
+    <!-- JavaScript -->
+    <script src="./js/main.js" type="module"></script>
 </head>
 <body>
+    <!-- Hero Section -->
     <section class="bg-indigo-100 bg-opacity-50 p-3 pb-20 sm:grid sm:grid-cols-8 xl:grid-cols-6">
         <div class="mx-4 sm:col-start-2 sm:col-end-8 xl:col-end-6">
             <nav class="flex justify-between items-center my-4 container">
+                <!-- Home Page Button -->
                 <a href="/">
                   <img src="./assets/initial-state.png" alt="logo"
                   class="w-10 bg-white shadow-md rounded-full">
                 </a>
+                <!-- Buttons to left -->
                 <ul class="flex" >
+                    <!-- Idiom Selection -->
                     <li class="ml-3">
                         <div class="inline-block relative">
                             <select id="idiom-select" class="block font-semibold appearance-none bg-white px-4 py-2 pr-6 rounded-full shadow-md leading-tight">
@@ -28,97 +35,94 @@
                             </div>
                         </div>
                     </li>
-                    <li class="ml-3">
-                        <a href="/projects">
-                            <button id="projects-buttom" class="bg-white text-gray-900 font-semibold py-2 px-4 rounded-full shadow-md leading-tight hidden"
-                            href="/projects"></button>
-                        </a>
-                    </li>
-                    <li id="mock-projects-buttom" class="ml-3">
-                        <span class="bg-gray-200 pb-4 px-10 rounded-full leading-tight animate-pulse"></span>
-                    </li>
                 </ul>
             </nav>
-            <h1 class="font-bold text-gray-900 text-center mt-16 text-4xl hidden" id="hero-greeting"/>
-            <h1 class="font-bold text-gray-900 text-center mt-16 text-4xl" id="mock-hero-greeting">
-                <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 40%;"></span>
+            <h1 id="hero-greeting" class="font-bold text-gray-900 text-center mt-16 mb-5 text-4xl">
+                <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 40%;"/>
             </h1>
-            <hr class="py-5 invisible">
-            <p class="text-gray-700 text-center text-2xl hidden" id="hero-sentence"/>
-            <p class="text-gray-700 text-center text-2xl" id="mock-hero-sentence">
-                <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 100%;"></span>
+            <p id="hero-sentence" class="text-gray-700 text-center text-2xl">
+                <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 100%;"/>
                 <br>
-                <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 40%;"></span>
+                <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 40%;"/>
             </p>
         </div>
     </section>
+
+    <!-- Languages Section -->
     <section class="p-3 py-16 ml-3 mr-3 sm:grid sm:grid-cols-8 xl:grid-cols-6">
         <div class="mx-4 sm:col-start-2 sm:col-end-8 xl:col-end-6">
-            <h1 class="font-bold text-gray-900 text-left text-4xl hidden" id="languages-title"/>
-            <h1 class="font-bold text-gray-900 text-left text-4xl" id="mock-languages-title">
-                <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 25%;"></span>
+            <!-- Title -->
+            <h1 id="languages-title" class="font-bold text-gray-900 text-left text-4xl">
+                <span id="mock-languages-title" class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 25%;"/>
             </h1>
-            <p class="text-gray-700 text-left text-2xl hidden" id="languages-description"/>
-            <p class="text-gray-700 text-left text-2xl" id="mock-languages-description"/>
-                <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 65%;"></span>
+            <!-- Description -->
+            <p id="languages-description" class="text-gray-700 text-left text-2xl">
+                <span id="mock-languages-description" class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 65%;"/>
             </p>
-            <ul class="mt-8 md:flex md:flex-wrap" style="justify-content: space-between;" id="languages-list">
-                <li class="rounded bg-indigo-100 bg-opacity-0 overflow-hidden shadow p-3 mb-3 mock-language-card md:w-1/2"
-                style="margin-right: -5px; margin-left: -5px;">
+            <!-- Languages Card List -->
+            <ul id="languages-list" class="mt-8 md:flex md:flex-wrap" style="justify-content: space-between;">
+                <!-- Mock Language Card-->
+                <li class="mock-language-card rounded bg-indigo-100 bg-opacity-0 overflow-hidden shadow p-3 mb-3 md:w-1/2" style="margin-right: -5px; margin-left: -5px;">
                     <div class="flex">
+                        <!-- Circle mocking Language Logo -->
                         <svg width="2.5rem" height="2.5rem" class="rounded-full w-10 mr-6 mb-3 shadow animate-pulse">
                             <rect width="2.5rem" height="2.5rem" style="fill: #edf2f7;" />
                         </svg>
-                        <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 30%;"></span>
+                        <!-- Rounded Rectangle mocking Language Name -->
+                        <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 30%;"/>
                     </div>
-                    <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 100%;"></span>
+                    <!-- Rounded Rectangles mocking Uses -->
+                    <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 100%;"/>
                     <br>
-                    <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 40%;"></span>
+                    <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 40%;"/>
                 </li>
-                <li class="rounded bg-indigo-100 bg-opacity-0 overflow-hidden shadow p-3 mb-3 mock-language-card md:w-1/2"
-                style="margin-right: -5px; margin-left: -5px;">
+                <!-- Mock Language Card-->
+                <li class="mock-language-card rounded bg-indigo-100 bg-opacity-0 overflow-hidden shadow p-3 mb-3 md:w-1/2" style="margin-right: -5px; margin-left: -5px;">
                     <div class="flex">
+                        <!-- Circle mocking Language Logo -->
                         <svg width="2.5rem" height="2.5rem" class="rounded-full w-10 mr-6 mb-3 shadow animate-pulse">
                             <rect width="2.5rem" height="2.5rem" style="fill: #edf2f7;" />
                         </svg>
-                        <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 30%;"></span>
+                        <!-- Rounded Rectangle mocking Language Name -->
+                        <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 30%;"/>
                     </div>
-                    <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 100%;"></span>
+                    <!-- Rounded Rectangles mocking Uses -->
+                    <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 100%;"/>
                     <br>
-                    <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 40%;"></span>
+                    <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 40%;"/>
                 </li>
-                <li class="rounded bg-indigo-100 bg-opacity-0 overflow-hidden shadow p-3 mb-3 mock-language-card md:w-1/2"
-                style="margin-right: -5px; margin-left: -5px;">
+                <!-- Mock Language Card-->
+                <li class="mock-language-card rounded bg-indigo-100 bg-opacity-0 overflow-hidden shadow p-3 mb-3 md:w-1/2" style="margin-right: -5px; margin-left: -5px;">
                     <div class="flex">
+                        <!-- Circle mocking Language Logo -->
                         <svg width="2.5rem" height="2.5rem" class="rounded-full w-10 mr-6 mb-3 shadow animate-pulse">
                             <rect width="2.5rem" height="2.5rem" style="fill: #edf2f7;" />
                         </svg>
-                        <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 30%;"></span>
+                        <!-- Rounded Rectangle mocking Language Name -->
+                        <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 30%;"/>
                     </div>
-                    <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 100%;"></span>
+                    <!-- Rounded Rectangles mocking Uses -->
+                    <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 100%;"/>
                     <br>
-                    <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 40%;"></span>
+                    <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 40%;"/>
                 </li>
-                <li class="rounded bg-indigo-100 bg-opacity-0 overflow-hidden shadow p-3 mb-3 mock-language-card md:w-1/2"
-                style="margin-right: -5px; margin-left: -5px;">
+                <!-- Mock Language Card-->
+                <li class="mock-language-card rounded bg-indigo-100 bg-opacity-0 overflow-hidden shadow p-3 mb-3 md:w-1/2" style="margin-right: -5px; margin-left: -5px;">
                     <div class="flex">
+                        <!-- Circle mocking Language Logo -->
                         <svg width="2.5rem" height="2.5rem" class="rounded-full w-10 mr-6 mb-3 shadow animate-pulse">
                             <rect width="2.5rem" height="2.5rem" style="fill: #edf2f7;" />
                         </svg>
-                        <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 30%;"></span>
+                        <!-- Rounded Rectangle mocking Language Name -->
+                        <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 30%;"/>
                     </div>
-                    <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 100%;"></span>
+                    <!-- Rounded Rectangles mocking Uses -->
+                    <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 100%;"/>
                     <br>
-                    <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 40%;"></span>
+                    <span class="rounded bg-gray-200 h-5 animate-pulse" style="padding-left: 40%;"/>
                 </li>
             </ul>
         </div>
     </section>
-
-    <script type="module">
-        import { fillPage } from './js/utils.js';
-
-        fillPage();
-    </script>
 </body>
 </html>
