@@ -1,12 +1,3 @@
-export const NAV = {
-    ENGLISH : {
-        projects : "Projects"
-    },
-    PORTUGUESE : {
-        projects : "Projetos"
-    }
-}
-
 export const HERO = {
     ENGLISH : {
         greeting : "Hello, I'm Luis Felipe!",
