@@ -21,11 +21,7 @@ function fillLanguagesSection() {
     // Remove existing cards
     // (Else when the idiom changes, the existing
     // cards of the previous idiom would keep there)
-    const languageCards = document.getElementsByClassName("language-card");
-
-    for (const card of languageCards) {
-        card.classList.add("hidden");
-    }
+    utils.hideClass("language-card");
 
     // Define title
     const languagesTitle = document.getElementById("languages-title");
@@ -41,10 +37,34 @@ function fillLanguagesSection() {
     }
 
     // Hide mock cards
-    utils.hideMockInLanguagesList();
+    utils.hideClass("mock-language-card");
+}
+
+function fillProjectsSection() {
+    // Remove existing cards
+    // (Else when the idiom changes, the existing
+    // cards of the previous idiom would keep there)
+    utils.hideClass("project-card");
+
+    // Define title
+    const projectsTitle = document.getElementById("projects-title");
+    projectsTitle.innerHTML = content.PROJECTS[idiom].title;
+
+    // Define description
+    const projectsDescription = document.getElementById("projects-description");
+    projectsDescription.innerHTML = content.PROJECTS[idiom].description;
+
+    // Insert cards
+    for (const project of content.PROJECTS[idiom].unorderedList) {
+        utils.addToProjectList(project);
+    }
+
+    // Hide mock cards
+    utils.hideClass("mock-project-card");
 }
 
 function fillPage() {
     fillHeroSection();
     fillLanguagesSection();
+    fillProjectsSection();
 }

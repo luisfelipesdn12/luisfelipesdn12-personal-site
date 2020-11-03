@@ -7,11 +7,11 @@ export function getGithubLanguageSearchURL(language) {
     return "https://github.com/search?l=" + language+ "&q=user%3A" + USERNAME;
 }
 
-export function hideMockInLanguagesList() {
-    const mockCards = document.getElementsByClassName("mock-language-card");
+export function hideClass(className) {
+    const elements = document.getElementsByClassName(className);
 
-    for (const mockCard of mockCards) {
-        mockCard.classList.add("hidden");
+    for (const element of elements) {
+        element.classList.add("hidden");
     }
 }
 
@@ -46,4 +46,36 @@ export function addToLanguagesList(language) {
     iDoWith.innerHTML = language.iDoWith;
     iDoWith.className = "text-gray-700";
     cardLink.appendChild(iDoWith);
+}
+
+export function addToProjectList(project) {
+    const projectsList = document.getElementById("projects-list");
+
+    const card = document.createElement("li");
+    card.className = "project-card max-w-sm rounded overflow-hidden shadow mb-3";
+    projectsList.appendChild(card);
+
+    const cardLink = document.createElement("a");
+    cardLink.href = project.href;
+    cardLink.target = "_blank";
+    card.appendChild(cardLink);
+
+    const img = document.createElement("img");
+    img.className = "w-full";
+    img.src = project.image;
+    cardLink.appendChild(img);
+
+    const titleAndDescription = document.createElement("div");
+    titleAndDescription.className = "px-6 py-4";
+    cardLink.appendChild(titleAndDescription);
+
+    const title = document.createElement("h1");
+    title.className = "font-bold text-xl mb-2";
+    title.innerHTML = project.name;
+    titleAndDescription.appendChild(title);
+    
+    const description = document.createElement("p");
+    description.className = "text-gray-700 text-base";
+    description.innerHTML = project.description;
+    titleAndDescription.appendChild(description);
 }
