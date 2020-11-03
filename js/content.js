@@ -12,7 +12,7 @@ export const HERO = {
 export const LANGUAGES = {
     ENGLISH : {
         title : "Languages",
-        description : "Click in the language to see my repositories with it.",
+        description : "Programming languages I can develop. Click in the language to see my repositories with it.",
         unorderedList : [
             {
                 name : "Python",
@@ -48,7 +48,7 @@ export const LANGUAGES = {
     },
     PORTUGUESE : {
         title : "Linguagens",
-        description : "Clique na linguagem para ver meus repositórios com ela.",
+        description : "Linguagens de programação em que poso desenvolver. Clique na linguagem para ver meus repositórios com ela.",
         unorderedList : [
             {
                 name : "Python",
@@ -79,6 +79,45 @@ export const LANGUAGES = {
                 name : "C/C++",
                 iDoWith : "Programação competitiva, Arduino, sistemas embarcados.",
                 image : "../assets/c-plus-plus-logo.png"
+            }
+        ]
+    }
+};
+
+export const PROJECTS = {
+    ENGLISH : {
+        title : "Projects",
+        description : "My knowledge applied in personal projects. Click in the project to see more.",
+        unorderedList : [
+            {
+                image : "../assets/prime-numbers.jpg",
+                name : "Infinite prime numbers generator",
+                description : "Algorithm to generate prime numbers infinitely, using iterations, arrays and divisibility tests. I\'ve made a YouTube video explain the logic.",
+                href : "https://github.com/luisfelipesdn12/Numeros-Primos/"
+            },
+            {
+                image : "../assets/where-the-office.png",
+                name : "Where Am I In The Office",
+                description : "A website that shows my progress when watching The Office series. Created with the purpose of showing my friends how much they can give me spoilers :)",
+                href : "https://github.com/luisfelipesdn12/where-am-i-in-the-office"
+            }
+        ]
+    },
+    PORTUGUESE : {
+        title : "Projetos",
+        description : "Meus conhecimentos aplicados em projetos pessoais. Clique no projeto para ver mais.",
+        unorderedList : [
+            {
+                image : "../assets/prime-numbers.jpg",
+                name : "Gerador infinito de números primos",
+                description : "Agoritimo para gerar números primos infinitamente, usando iterações, arrays e testes de divisibilidade. Eu fiz um vídeo no YouTube explicando a lógica.",
+                href : "https://github.com/luisfelipesdn12/Numeros-Primos/"
+            },
+            {
+                image : "../assets/where-the-office.png",
+                name : "Onde Estou Em The Office",
+                description : "Um site que mostra meu progresso ao assistir a série The Office. Criado com a proposta de mostrar aos meus amigos o quanto eles podem me dar spoilers :)",
+                href : "https://github.com/luisfelipesdn12/where-am-i-in-the-office"
             }
         ]
     }
