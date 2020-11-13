@@ -100,6 +100,30 @@ export const PROJECTS = {
                 name : "Where Am I In The Office",
                 description : "A website that shows my progress when watching The Office series. Created with the purpose of showing my friends how much they can give me spoilers :)",
                 href : "https://github.com/luisfelipesdn12/where-am-i-in-the-office"
+            },
+            {
+                image : "../assets/pytosis_demo.gif",
+                name : "Pytosis Simulator",
+                description : "A simple simulator to the cell's reproduction using Python and Pygame.",
+                href : "https://github.com/luisfelipesdn12/pytosis-simulator"
+            },
+            {
+                image : "../assets/wca-comp-alert.png",
+                name : "WCA Competitions Alert",
+                description : "A script which send an e-mail when there's a new WCA competition. Integrates the WCA's and the Google Sheets API, the subscription is made by the Google Forms.",
+                href : "https://github.com/luisfelipesdn12/Alerta-de-Campeonatos-WCA"
+            },
+            {
+                image : "../assets/trabalhos-escolares-automaticos.jpg",
+                name : "Automatic schoolwork",
+                description : "A program that, from a subject, extracts content from Wikipedia, summarizes and adds images, then formats and exports a document in the form of schoolwork.",
+                href : "https://github.com/luisfelipesdn12/trabalhos-escolares-automaticos"
+            },
+            {
+                image : "../assets/gihub-demo.jpg",
+                name : "See more!",
+                description : "Explore all my projects in my GitHub profile.",
+                href : "https://github.com/luisfelipesdn12"
             }
         ]
     },
@@ -118,6 +142,30 @@ export const PROJECTS = {
                 name : "Onde Estou Em The Office",
                 description : "Um site que mostra meu progresso ao assistir a série The Office. Criado com a proposta de mostrar aos meus amigos o quanto eles podem me dar spoilers :)",
                 href : "https://github.com/luisfelipesdn12/where-am-i-in-the-office"
+            },
+            {
+                image : "../assets/pytosis_demo.gif",
+                name : "Pytosis Simulator",
+                description : "Um simulador simples da reprodução celular, utilizando Python e Pygame.",
+                href : "https://github.com/luisfelipesdn12/pytosis-simulator"
+            },
+            {
+                image : "../assets/wca-comp-alert.png",
+                name : "Alerta de Campeonatos WCA",
+                description : "Um script que envia um e-mail quando há uma nova competição da WCA. Integra as APIs da WCA e a do Planilhas Google, a inscrição é feita pelo Formulários Google.",
+                href : "https://github.com/luisfelipesdn12/Alerta-de-Campeonatos-WCA"
+            },
+            {
+                image : "../assets/trabalhos-escolares-automaticos.jpg",
+                name : "Trabalhos Escolares Automáticos",
+                description : "Um programa que, a partir de um assunto, extrai conteúdo da Wikipedia, resume e adiciona imagens, depois formata e exporta um documento em forma de trabalho escolar.",
+                href : "https://github.com/luisfelipesdn12/trabalhos-escolares-automaticos"
+            },
+            {
+                image : "../assets/gihub-demo.jpg",
+                name : "Veja mais!",
+                description : "Explore todos os meus projetos no meu perfil do GitHub!",
+                href : "https://github.com/luisfelipesdn12"
             }
         ]
     }
