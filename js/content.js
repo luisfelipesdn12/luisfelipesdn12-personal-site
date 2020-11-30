@@ -170,3 +170,8 @@ export const PROJECTS = {
         ]
     }
 };
+
+export const FOOTER = {
+    ENGLISH : "Developed with HTML, CSS and JavaScript by ",
+    PORTUGUESE : "Desenvolvido com HTML, CSS e JavaScript por "
+};

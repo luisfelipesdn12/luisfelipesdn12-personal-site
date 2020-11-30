@@ -63,8 +63,22 @@ function fillProjectsSection() {
     utils.hideClass("mock-project-card");
 }
 
+function fillFooter() {
+    const devByParagraph = document.getElementById("dev-by");
+    devByParagraph.innerHTML = content.FOOTER[idiom];
+
+    const linkToMe = document.createElement("a");
+    linkToMe.href = "#";
+    linkToMe.className = "text-blue-700";
+    linkToMe.innerHTML = "Luis Felipe"
+
+    devByParagraph.appendChild(linkToMe);
+    devByParagraph.innerHTML += ".";
+}
+
 function fillPage() {
     fillHeroSection();
     fillLanguagesSection();
     fillProjectsSection();
+    fillFooter();
 }
