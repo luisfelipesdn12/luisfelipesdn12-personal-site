@@ -79,3 +79,51 @@ export function addToProjectList(project) {
     description.innerHTML = project.description;
     titleAndDescription.appendChild(description);
 }
+
+export function addToCourseList(course) {
+    const courseList = document.getElementById("courses-list");
+
+    const card = document.createElement("li");
+    card.className = "course-card max-w-sm rounded overflow-hidden shadow mb-3";
+    courseList.appendChild(card);
+
+    const cardLink = document.createElement("a");
+    cardLink.href = course.href;
+    cardLink.target = "_blank";
+    card.appendChild(cardLink);
+
+    const img = document.createElement("img");
+    img.className = "w-full";
+    img.src = course.image;
+    cardLink.appendChild(img);
+
+    const titleAndDescription = document.createElement("div");
+    titleAndDescription.className = "px-6 py-4";
+    cardLink.appendChild(titleAndDescription);
+
+    const title = document.createElement("h1");
+    title.className = "font-bold text-xl mb-2";
+    title.innerHTML = course.name;
+    titleAndDescription.appendChild(title);
+    
+    const description = document.createElement("p");
+    description.className = "text-gray-700 text-base";
+    description.innerHTML = course.description;
+    titleAndDescription.appendChild(description);
+
+    const divider =  document.createElement("hr");
+    cardLink.appendChild(divider);
+
+    const institutionAndHours = document.createElement("div");
+    institutionAndHours.className = "flex justify-between px-6 py-4 text-blue-800 text-base";
+    cardLink.appendChild(institutionAndHours);
+
+    const institution = document.createElement("p");
+    institution.innerHTML = course.institution;
+    institutionAndHours.appendChild(institution);
+    
+    const hours = document.createElement("p");
+    hours.innerHTML = `${course.hours} h`;
+    institutionAndHours.appendChild(hours);
+}
+

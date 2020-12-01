@@ -171,6 +171,53 @@ export const PROJECTS = {
     }
 };
 
+export const EDUCATION = {
+    ENGLISH : {
+        title : "Education",
+        description : "My background in formal education, in addition to technologies courses and studies of interest.",
+        unorderedList : [
+            {
+                image: "../assets/education/python-curso-em-video.jpg",
+                name: "Python 3 Course",
+                description: "Created by Prof. Gustavo Guanabara to \"Curso em Vídeo\", it shows from basics concepts to errors handling with the Python programming language.",
+                institution: "Curso em Vídeo",
+                hours: 120,
+                href: "https://www.cursoemvideo.com/cursos/"
+            },
+            {
+                image: "../assets/education/high-school.jpg",
+                name: "High School",
+                description: "Brazilian High School. Subjects as Portuguese Language, Mathematics, Chemistry, Sociology, Arts, Physics, English Language, Geography, Philosophy, Biology, etc.",
+                institution: "State of Sao Paulo",
+                hours: "1050 of 3150",
+                href: "https://inova.educacao.sp.gov.br/"
+            }
+        ]
+    },
+    PORTUGUESE : {
+        title : "Educação",
+        description : "Minha formação em educação formal, além de cursos de tecnologia e estudos de interesse.",
+        unorderedList : [
+            {
+                image: "../assets/education/python-curso-em-video.jpg",
+                name: "Curso de Python 3",
+                description: "Criado pelo Prof. Gustavo Guanabara para o \"Curso em Vídeo\", aborda desde conceitos básicos até tratamento de erros com a linguagem de programação Python.",
+                institution: "Curso em Vídeo",
+                hours: 120,
+                href: "https://www.cursoemvideo.com/cursos/"
+            },
+            {
+                image: "../assets/education/high-school.jpg",
+                name: "High School",
+                description: "Ensino Médio Brasileiro. Disciplinas como Língua Portuguesa, Matemática, Química, Sociologia, Artes, Física, Língua Inglesa, Geografia, Filosofia, Biologia, etc.",
+                institution: "Estado de São Paulo",
+                hours: "1050 de 3150",
+                href: "https://inova.educacao.sp.gov.br/"
+            }
+        ]
+    }
+};
+
 export const FOOTER = {
     ENGLISH : "Developed with HTML, CSS and JavaScript by ",
     PORTUGUESE : "Desenvolvido com HTML, CSS e JavaScript por "

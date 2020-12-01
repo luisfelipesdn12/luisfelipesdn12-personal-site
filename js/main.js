@@ -63,6 +63,29 @@ function fillProjectsSection() {
     utils.hideClass("mock-project-card");
 }
 
+function fillEducationSection() {
+    // Remove existing cards
+    // (Else when the idiom changes, the existing
+    // cards of the previous idiom would keep there)
+    utils.hideClass("course-card");
+
+    // Define title
+    const educationTitle = document.getElementById("education-title");
+    educationTitle.innerHTML = content.EDUCATION[idiom].title;
+
+    // Define description
+    const educationDescription = document.getElementById("education-description");
+    educationDescription.innerHTML = content.EDUCATION[idiom].description;
+
+    // Insert cards
+    for (const course of content.EDUCATION[idiom].unorderedList) {
+        utils.addToCourseList(course);
+    }
+
+    // Hide mock cards
+    utils.hideClass("mock-course-card");
+}
+
 function fillFooter() {
     const devByParagraph = document.getElementById("dev-by");
     devByParagraph.innerHTML = content.FOOTER[idiom];
@@ -80,5 +103,6 @@ function fillPage() {
     fillHeroSection();
     fillLanguagesSection();
     fillProjectsSection();
+    fillEducationSection();
     fillFooter();
 }
