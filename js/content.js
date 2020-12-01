@@ -184,6 +184,23 @@ export const EDUCATION = {
                 hours: 120,
                 href: "https://www.cursoemvideo.com/cursos/"
             },
+            
+            {
+                image: "../assets/education/backend.jpg",
+                name: "Backend Developer Course",
+                description: "A full backend course. Showing Git Flow, Systems Architecture, Java, Spring Boot, testing, best practices with SQL, SCRUM, JavaScript ES6, Node.js with Express, best practices with API's and laws about data security.",
+                institution: "Digital Innovation One",
+                hours: 100,
+                href: "https://certificates.digitalinnovation.one/6CB93EFF"
+            },
+            {
+                image: "../assets/education/golang.jpg",
+                name: "Golang Course",
+                description: "Brazilian version made by Ellen Körbes of a course originally made by Todd McLeod. It shows all the advantages of using the Go Programming Language, fundamental concepts and best practices to code in Go.",
+                institution: "Aprenda Go - Ellen Körbes",
+                hours: 22,
+                href: "https://www.youtube.com/playlist?list=PLCKpcjBB_VlBsxJ9IseNxFllf-UFEXOdg"
+            },
             {
                 image: "../assets/education/high-school.jpg",
                 name: "High School",
@@ -205,6 +222,23 @@ export const EDUCATION = {
                 institution: "Curso em Vídeo",
                 hours: 120,
                 href: "https://www.cursoemvideo.com/cursos/"
+            },
+            
+            {
+                image: "../assets/education/backend.jpg",
+                name: "Curso Backend Developer",
+                description: "Um curso de back-end completo. Abordando Git Flow, Arquitetura de Sistemas, Java, Spring Boot, testes, melhores práticas com SQL, SCRUM, JavaScript ES6, Node.js com Express, melhores práticas com API's e leis sobre segurança de dados.",
+                institution: "Digital Innovation One",
+                hours: 100,
+                href: "https://certificates.digitalinnovation.one/6CB93EFF"
+            },
+            {
+                image: "../assets/education/golang.jpg",
+                name: "Curso Golang",
+                description: "Versão brasileira feita por Ellen Körbes do curso originalmente feito por Todd McLeod. O curso aborda todas as vantagens de usar a Linguagem de Programação Go, conceitos fundamentais e boas práticas para desenvolver em Go.",
+                institution: "Aprenda Go - Ellen Körbes",
+                hours: 22,
+                href: "https://www.youtube.com/playlist?list=PLCKpcjBB_VlBsxJ9IseNxFllf-UFEXOdg"
             },
             {
                 image: "../assets/education/high-school.jpg",
