@@ -1,0 +1,26 @@
+{
+    "Creates a generic list item." : {
+		"prefix": "list-item",
+		"body": [
+			"{",
+			"\timage: \"../assets/${path}\",",
+			"\tname: \"${name}\",",
+			"\tdescription: \"${description}\",",
+			"\thref: \"https://${link}\"",
+			"}"
+		]
+	},
+	"Creates a course list item." : {
+		"prefix": "list-item:course",
+		"body": [
+			"{",
+			"\timage: \"../assets/education/${path}\",",
+			"\tname: \"${name}\",",
+			"\tdescription: \"${description}\",",
+			"\tinstitution: \"${source}\",",
+			"\thours: ${x},",
+			"\thref: \"https://${link}\"",
+			"}"
+		]
+	}
+}
