@@ -242,7 +242,7 @@ export const EDUCATION = {
             },
             {
                 image: "../assets/education/high-school.jpg",
-                name: "High School",
+                name: "Ensino Médio",
                 description: "Ensino Médio Brasileiro. Disciplinas como Língua Portuguesa, Matemática, Química, Sociologia, Artes, Física, Língua Inglesa, Geografia, Filosofia, Biologia, etc.",
                 institution: "Estado de São Paulo",
                 hours: "1050 de 3150",
