@@ -17,32 +17,32 @@ export const LANGUAGES = {
             {
                 name : "Python",
                 iDoWith : "Automation, data science, graphic interface.",
-                image : "../assets/python.png"  
+                image : "../assets/languages/python.png"  
             },
             {
                 name : "Java",
                 iDoWith : "Backend development, REST APIs.",
-                image : "../assets/java.png"
+                image : "../assets/languages/java.png"
             },
             {
                 name : "Go",
                 iDoWith : "Servers, automation, backend development, REST APIs.",
-                image : "../assets/golang.png"
+                image : "../assets/languages/golang.png"
             },
             {
                 name : "HTML",
                 iDoWith : "Web sites, integrations with CSS libraries.",
-                image : "../assets/html-5.png"
+                image : "../assets/languages/html-5.png"
             },
             {
                 name : "JavaScript",
                 iDoWith : "API consume, dynamic content in HTML.",
-                image : "../assets/javascript.png"
+                image : "../assets/languages/javascript.png"
             },
             {
                 name : "C/C++",
                 iDoWith : "Competitive programming, Arduino, embedded systems.",
-                image : "../assets/c-plus-plus-logo.png"
+                image : "../assets/languages/c-plus-plus-logo.png"
             }
         ]
     },
@@ -53,32 +53,32 @@ export const LANGUAGES = {
             {
                 name : "Python",
                 iDoWith : "Automação, data science, interfaces gráficas.",
-                image : "../assets/python.png"  
+                image : "../assets/languages/python.png"  
             },
             {
                 name : "Java",
                 iDoWith : "Desenvolvimento backend, APIs REST. ",
-                image : "../assets/java.png"
+                image : "../assets/languages/java.png"
             },
             {
                 name : "Go",
                 iDoWith : "Servidores, automação, desenvolvimento backend, APIs REST.",
-                image : "../assets/golang.png"
+                image : "../assets/languages/golang.png"
             },
             {
                 name : "HTML",
                 iDoWith : "Sites, integrações com bibliotecas CSS.",
-                image : "../assets/html-5.png"
+                image : "../assets/languages/html-5.png"
             },
             {
                 name : "JavaScript",
                 iDoWith : "Consumo de APIs, conteúdo dinâmico em HTML.",
-                image : "../assets/javascript.png"
+                image : "../assets/languages/javascript.png"
             },
             {
                 name : "C/C++",
                 iDoWith : "Programação competitiva, Arduino, sistemas embarcados.",
-                image : "../assets/c-plus-plus-logo.png"
+                image : "../assets/languages/c-plus-plus-logo.png"
             }
         ]
     }
@@ -90,37 +90,37 @@ export const PROJECTS = {
         description : "My knowledge applied in personal projects. Click in the project to see more.",
         unorderedList : [
             {
-                image : "../assets/prime-numbers.jpg",
+                image : "../assets/projects/prime-numbers.jpg",
                 name : "Infinite prime numbers generator",
                 description : "Algorithm to generate prime numbers infinitely, using iterations, arrays and divisibility tests. I\'ve made a YouTube video explain the logic.",
                 href : "https://github.com/luisfelipesdn12/Numeros-Primos/"
             },
             {
-                image : "../assets/where-the-office.png",
+                image : "../assets/projects/where-the-office.png",
                 name : "Where Am I In The Office",
                 description : "A website that shows my progress when watching The Office series. Created with the purpose of showing my friends how much they can give me spoilers :)",
                 href : "https://github.com/luisfelipesdn12/where-am-i-in-the-office"
             },
             {
-                image : "../assets/pytosis_demo.gif",
+                image : "../assets/projects/pytosis_demo.gif",
                 name : "Pytosis Simulator",
                 description : "A simple simulator to the cell's reproduction using Python and Pygame.",
                 href : "https://github.com/luisfelipesdn12/pytosis-simulator"
             },
             {
-                image : "../assets/wca-comp-alert.png",
+                image : "../assets/projects/wca-comp-alert.png",
                 name : "WCA Competitions Alert",
                 description : "A script which send an e-mail when there's a new WCA competition. Integrates the WCA's and the Google Sheets API, the subscription is made by the Google Forms.",
                 href : "https://github.com/luisfelipesdn12/Alerta-de-Campeonatos-WCA"
             },
             {
-                image : "../assets/trabalhos-escolares-automaticos.jpg",
+                image : "../assets/projects/trabalhos-escolares-automaticos.jpg",
                 name : "Automatic schoolwork",
                 description : "A program that, from a subject, extracts content from Wikipedia, summarizes and adds images, then formats and exports a document in the form of schoolwork.",
                 href : "https://github.com/luisfelipesdn12/trabalhos-escolares-automaticos"
             },
             {
-                image : "../assets/gihub-demo.jpg",
+                image : "../assets/projects/gihub-demo.jpg",
                 name : "See more!",
                 description : "Explore all my projects in my GitHub profile.",
                 href : "https://github.com/luisfelipesdn12"
@@ -132,37 +132,37 @@ export const PROJECTS = {
         description : "Meus conhecimentos aplicados em projetos pessoais. Clique no projeto para ver mais.",
         unorderedList : [
             {
-                image : "../assets/prime-numbers.jpg",
+                image : "../assets/projects/prime-numbers.jpg",
                 name : "Gerador infinito de números primos",
                 description : "Agoritimo para gerar números primos infinitamente, usando iterações, arrays e testes de divisibilidade. Eu fiz um vídeo no YouTube explicando a lógica.",
                 href : "https://github.com/luisfelipesdn12/Numeros-Primos/"
             },
             {
-                image : "../assets/where-the-office.png",
+                image : "../assets/projects/where-the-office.png",
                 name : "Onde Estou Em The Office",
                 description : "Um site que mostra meu progresso ao assistir a série The Office. Criado com a proposta de mostrar aos meus amigos o quanto eles podem me dar spoilers :)",
                 href : "https://github.com/luisfelipesdn12/where-am-i-in-the-office"
             },
             {
-                image : "../assets/pytosis_demo.gif",
+                image : "../assets/projects/pytosis_demo.gif",
                 name : "Pytosis Simulator",
                 description : "Um simulador simples da reprodução celular, utilizando Python e Pygame.",
                 href : "https://github.com/luisfelipesdn12/pytosis-simulator"
             },
             {
-                image : "../assets/wca-comp-alert.png",
+                image : "../assets/projects/wca-comp-alert.png",
                 name : "Alerta de Campeonatos WCA",
                 description : "Um script que envia um e-mail quando há uma nova competição da WCA. Integra as APIs da WCA e a do Planilhas Google, a inscrição é feita pelo Formulários Google.",
                 href : "https://github.com/luisfelipesdn12/Alerta-de-Campeonatos-WCA"
             },
             {
-                image : "../assets/trabalhos-escolares-automaticos.jpg",
+                image : "../assets/projects/trabalhos-escolares-automaticos.jpg",
                 name : "Trabalhos Escolares Automáticos",
                 description : "Um programa que, a partir de um assunto, extrai conteúdo da Wikipedia, resume e adiciona imagens, depois formata e exporta um documento em forma de trabalho escolar.",
                 href : "https://github.com/luisfelipesdn12/trabalhos-escolares-automaticos"
             },
             {
-                image : "../assets/gihub-demo.jpg",
+                image : "../assets/projects/gihub-demo.jpg",
                 name : "Veja mais!",
                 description : "Explore todos os meus projetos no meu perfil do GitHub!",
                 href : "https://github.com/luisfelipesdn12"
