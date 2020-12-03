@@ -6,6 +6,7 @@ let idiom;
 
 document.body.onload = idiomSelect.onchange = function() {
     idiom = idiomSelect.value;
+    document.documentElement.lang = (idiom == "PORTUGUESE") ? "pt-BR" : "en";
     fillPage();
 };
 
