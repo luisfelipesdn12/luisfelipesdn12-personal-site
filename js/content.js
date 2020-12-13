@@ -195,7 +195,7 @@ export const EDUCATION = {
             {
                 image: "../assets/education/data_visualization_python.jpg",
                 name: "Data Science: Data Visualization with Python",
-                description: "The course is created by Diego Mariano and approaches some important concepts for the creation of graphs and data visualization with the Python programming language. It shows even some HTML concepts to create an RNA comparison with real genomes. It is used the matplotlib and pandas with data from DataSUS and in biotech databases.",
+                description: "The course is created by Diego Mariano and approaches some important concepts for the creation of graphs and data visualization with the Python programming language. It shows even some HTML concepts to create an RNA comparison with real genomes. It is used the Python libraries matplotlib and pandas with data from DataSUS and in biotech databases.",
                 institution: "Udemy - Diego Mariano",
                 hours: 2,
                 href: "https://diegomariano.com/cursos/#ds",
