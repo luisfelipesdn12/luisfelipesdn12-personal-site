@@ -184,7 +184,23 @@ export const EDUCATION = {
                 hours: 120,
                 href: "https://www.cursoemvideo.com/cursos/"
             },
-            
+            {
+                image: "../assets/education/saga.png",
+                name: "<abbr title=\"Computer Graphic\">CG</abbr> Course",
+                description: "Made by <abbr title=\"School of Art Game and Animation\">SAGA</abbr> it addresses a broad and updated view on digital art, computer graphics, prototyping and immersive technologies. In it, I improved and developed concepts about vector art, image editing, 3D modeling, animation and video editing.",
+                institution: "SAGA",
+                hours: 220,
+                href: "https://saga.art.br/cursos/presencial/start/"
+            },
+            {
+                image: "../assets/education/data_visualization_python.jpg",
+                name: "Data Science: Data Visualization with Python",
+                description: "The course is created by Diego Mariano and approaches some important concepts for the creation of graphs and data visualization with the Python programming language. It shows even some HTML concepts to create an RNA comparison with real genomes. It is used the matplotlib and pandas with data from DataSUS and in biotech databases.",
+                institution: "Udemy - Diego Mariano",
+                hours: 2,
+                href: "https://diegomariano.com/cursos/#ds",
+                href: "https://www.udemy.com/course/visualizacao-de-dados-com-python/"
+            },
             {
                 image: "../assets/education/backend.jpg",
                 name: "Backend Developer Course",
@@ -223,7 +239,23 @@ export const EDUCATION = {
                 hours: 120,
                 href: "https://www.cursoemvideo.com/cursos/"
             },
-            
+            {
+                image: "../assets/education/saga.png",
+                name: "Curso de Computação Gráfica",
+                description: "Curso feito pela <abbr title=\"School of Art Game and Animation\">SAGA</abbr> que aborda uma visão ampla e atualizada sobre a arte digital, computação gráfica, prototipagem e tecnologias imersivas. Nele, aprimorei e desenvolvi conceitos sobre arte vetorial, edição de imagens, modelagem, animação 3D e edição de vídeos.",
+                institution: "SAGA",
+                hours: 220,
+                href: "https://saga.art.br/cursos/presencial/start/"
+            },
+            {
+                image: "../assets/education/data_visualization_python.jpg",
+                name: "Data Science: Visualização de Dados com Python",
+                description: "O curso é criado por Diego Mariano, e aborda alguns conceitos importantes para a criação de gráficos e vizualização de dados com a linguagem de programação Python. Ele aborda até mesmo alguns conceitos sobre HTML para criar uma comparação de RNA com genomas reais. São usados as bibliotecas do Python matplotlib e pandas com dados do DataSUS e de banco de dados de biotecnologia.",
+                institution: "Udemy - Diego Mariano",
+                hours: 2,
+                href: "https://diegomariano.com/cursos/#ds",
+                href: "https://www.udemy.com/course/visualizacao-de-dados-com-python/"
+            },
             {
                 image: "../assets/education/backend.jpg",
                 name: "Curso Backend Developer",
