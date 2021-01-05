@@ -1,11 +1,19 @@
 export const HERO = {
     ENGLISH : {
         greeting : "Hello, I'm Luis Felipe!",
-        sentence : 'I\'m a computer science student and I can code for: automations, websites, machine learning, APIs and data science. My main languages are <span class="text-blue-700 font-semibold">Python</span>, <span class="text-blue-700 font-semibold">Java</span> and <span class="text-blue-700 font-semibold">Go</span>.'
+        sentence : 'I\'m a computer science student and I can code for: automations, websites, machine learning, APIs and data science. My main languages are <span class="text-blue-700 font-semibold">Python</span>, <span class="text-blue-700 font-semibold">Java</span> and <span class="text-blue-700 font-semibold">Go</span>.',
+        resumeButton : {
+            text: "Resume",
+            href: "./assets/resume/Luis Felipe - Resume.pdf"
+        }
     },
     PORTUGUESE : {
         greeting : "Olá, eu sou o Luis Felipe!",
-        sentence : 'Sou um estudante de ciência da computação e posso desenvolver: automações, sites, machine learning, APIs e data science. Minhas principais linguagens de programação são <span class="text-blue-700 font-semibold">Python</span>, <span class="text-blue-700 font-semibold">Java</span> e <span class="text-blue-700 font-semibold">Go</span>.'
+        sentence : 'Sou um estudante de ciência da computação e posso desenvolver: automações, sites, machine learning, APIs e data science. Minhas principais linguagens de programação são <span class="text-blue-700 font-semibold">Python</span>, <span class="text-blue-700 font-semibold">Java</span> e <span class="text-blue-700 font-semibold">Go</span>.',
+        resumeButton : {
+            text: "Currículo",
+            href: "./assets/resume/Luis Felipe - Currículo.pdf"
+        }
     }
 };
 

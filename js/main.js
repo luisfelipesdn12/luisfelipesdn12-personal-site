@@ -16,6 +16,11 @@ function fillHeroSection() {
     
     const sentence = document.getElementById("hero-sentence");
     sentence.innerHTML = content.HERO[idiom].sentence;
+
+    const resumeButton = document.getElementById("resume-button");
+    resumeButton.onclick = () => open(content.HERO[idiom].resumeButton.href, "_blank");
+    resumeButton.innerHTML = content.HERO[idiom].resumeButton.text;
+    resumeButton.classList.remove("animate-pulse");
 }
 
 function fillLanguagesSection() {
