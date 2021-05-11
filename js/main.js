@@ -13,7 +13,7 @@ document.body.onload = idiomSelect.onchange = function() {
 function fillHeroSection() {
     const greeting = document.getElementById("hero-greeting");
     greeting.innerHTML = content.HERO[idiom].greeting;
-    
+
     const sentence = document.getElementById("hero-sentence");
     sentence.innerHTML = content.HERO[idiom].sentence;
 

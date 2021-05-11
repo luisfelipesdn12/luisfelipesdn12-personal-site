@@ -73,7 +73,7 @@ export function addToProjectList(project) {
     title.className = "font-bold text-xl mb-2";
     title.innerHTML = project.name;
     titleAndDescription.appendChild(title);
-    
+
     const description = document.createElement("p");
     description.className = "text-gray-700 text-base";
     description.innerHTML = project.description;
@@ -105,7 +105,7 @@ export function addToCourseList(course) {
     title.className = "font-bold text-xl mb-2";
     title.innerHTML = course.name;
     titleAndDescription.appendChild(title);
-    
+
     const description = document.createElement("p");
     description.className = "text-gray-700 text-base";
     description.innerHTML = course.description;
@@ -121,7 +121,7 @@ export function addToCourseList(course) {
     const institution = document.createElement("p");
     institution.innerHTML = course.institution;
     institutionAndHours.appendChild(institution);
-    
+
     const hours = document.createElement("p");
     hours.innerHTML = `${course.hours} h`;
     institutionAndHours.appendChild(hours);
