@@ -25,7 +25,7 @@ export const LANGUAGES = {
             {
                 name : "Python",
                 iDoWith : "Automation, data science, graphic interface.",
-                image : "../assets/languages/python.png"  
+                image : "../assets/languages/python.png"
             },
             {
                 name : "Java",
@@ -61,7 +61,7 @@ export const LANGUAGES = {
             {
                 name : "Python",
                 iDoWith : "Automação, data science, interfaces gráficas.",
-                image : "../assets/languages/python.png"  
+                image : "../assets/languages/python.png"
             },
             {
                 name : "Java",
