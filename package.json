@@ -9,7 +9,9 @@
     "scripts": {
         "dev": "next",
         "build": "next build",
-        "start": "next start"
+        "start": "next start",
+        "lint": "yarn prettier --check --ignore-unknown ./pages/**",
+        "lint:fix": "yarn prettier --write --ignore-unknown ./pages/**"
     },
     "dependencies": {
         "next": "^10.2.0",
@@ -18,6 +20,7 @@
     },
     "devDependencies": {
         "@types/react": "^17.0.5",
+        "prettier": "^2.3.0",
         "typescript": "^4.2.4"
     }
 }
