@@ -1,13 +1,32 @@
 import Head from 'next/head';
 import React from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import theme from '../src/theme';
+import theme, { ThemeProps } from '../src/theme';
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle<{ theme: ThemeProps }>`
     *, ::after, ::before {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+    }
+
+    body {
+        background-color: ${props => props.theme.colors.background.simple};
+        font-family: 'Asap', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    }
+
+    h1, h2, h3 {
+        color: ${props => props.theme.colors.text.title};
+    }
+
+    p {
+        color: ${props => props.theme.colors.text.simple};
+    }
+
+    a {
+        color: ${props => props.theme.colors.text.link};
+        background-color: transparent;
+        text-decoration: inherit;
     }
 `;
 
@@ -33,31 +52,31 @@ const App = ({ Component, pageProps }) => {
                 <link
                     rel="apple-touch-icon"
                     sizes="180x180"
-                    href="assets/icons/apple-touch-icon.png"
+                    href="/icons/apple-touch-icon.png"
                 />
                 <link
                     rel="icon"
                     type="image/png"
                     sizes="32x32"
-                    href="assets/icons/favicon-32x32.png"
+                    href="/icons/favicon-32x32.png"
                 />
                 <link
                     rel="icon"
                     type="image/png"
                     sizes="16x16"
-                    href="assets/icons/favicon-16x16.png"
+                    href="/icons/favicon-16x16.png"
                 />
-                <link rel="manifest" href="assets/icons/site.webmanifest" />
+                <link rel="manifest" href="/icons/site.webmanifest" />
                 <link
                     rel="mask-icon"
-                    href="assets/icons/safari-pinned-tab.svg"
+                    href="/icons/safari-pinned-tab.svg"
                     color="#1a202c"
                 />
-                <link rel="shortcut icon" href="assets/icons/favicon.ico" />
+                <link rel="shortcut icon" href="/icons/favicon.ico" />
                 <meta name="msapplication-TileColor" content="#da532c" />
                 <meta
                     name="msapplication-config"
-                    content="assets/icons/browserconfig.xml"
+                    content="/icons/browserconfig.xml"
                 />
                 <meta name="theme-color" content="#ffffff" />
 
@@ -97,7 +116,7 @@ const App = ({ Component, pageProps }) => {
                     rel="stylesheet"
                 />
             </Head>
-            <GlobalStyle />
+            <GlobalStyle theme={theme} />
             <ThemeProvider theme={theme}>
                 <Component {...pageProps} />
             </ThemeProvider>
