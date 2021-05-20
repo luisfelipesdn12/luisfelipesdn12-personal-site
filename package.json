@@ -10,8 +10,8 @@
         "dev": "next",
         "build": "next build",
         "start": "next start",
-        "lint": "yarn prettier --check --ignore-unknown ./pages/**",
-        "lint:fix": "yarn prettier --write --ignore-unknown ./pages/**"
+        "lint": "yarn prettier --check --ignore-unknown ./pages/** ./src/**",
+        "lint:fix": "yarn prettier --write --ignore-unknown ./pages/** ./src/**"
     },
     "dependencies": {
         "next": "^10.2.0",
