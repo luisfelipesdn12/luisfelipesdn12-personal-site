@@ -2,7 +2,7 @@ import { Content } from './models';
 
 type LocatedContent = { [language: string]: Content };
 
-const content: LocatedContent = {
+export const content: LocatedContent = {
     'en-US': {
         hero: {
             greeting: "Hello, I'm Luis Felipe!",
@@ -265,4 +265,6 @@ const content: LocatedContent = {
     },
 };
 
-export default content;
+export const getLocatedContent = (language: string): Content => {
+    return content[language] || content['en-US'];
+};

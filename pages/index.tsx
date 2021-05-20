@@ -1,5 +1,12 @@
+import { useRouter } from 'next/router';
+import { getLocatedContent } from '../src/content';
+
 const Home: React.FC = () => {
-    return <h1>Hello</h1>;
+    const router = useRouter();
+
+    const content = getLocatedContent(router.locale);
+
+    return <h1>{content.hero.greeting}</h1>;
 };
 
 export default Home;
