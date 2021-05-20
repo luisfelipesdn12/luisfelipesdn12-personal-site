@@ -1,3 +1,17 @@
+export interface HeroSectionContent {
+    greeting: string;
+    description: {
+        prefix: string;
+        languages: string[];
+        and: string;
+        suffix: string;
+    };
+    resumeButton: {
+        label: string;
+        link: string;
+    };
+}
+
 interface BaseCard {
     imageUrl: string;
     name: string;
@@ -5,34 +19,17 @@ interface BaseCard {
     link?: string;
 }
 
-interface BaseSectionContent {
+interface BaseSectionContent<CardListType extends BaseCard = BaseCard> {
     title: string;
     description: string;
-    list?: BaseCard[];
+    list?: CardListType[];
 }
 
 interface Project extends BaseCard {}
 
 interface Course extends BaseCard {
     institution: string;
-    hours: number;
-}
-
-export interface HeroSectionContent {
-    greeting: string;
-    description: string;
-    resumeButton: {
-        label: string;
-        link: string;
-    };
-}
-
-export interface ProjectSectionContent extends BaseSectionContent {
-    list: Project[];
-}
-
-export interface EducationSectionContent extends BaseSectionContent {
-    list: Course[];
+    hours: number | string;
 }
 
 export interface Footer {
@@ -42,4 +39,11 @@ export interface Footer {
     author: string;
     /** eg. "." */
     suffix: string;
+}
+
+export interface Content {
+    hero: HeroSectionContent;
+    projects: BaseSectionContent<Project>;
+    education: BaseSectionContent<Course>;
+    footer: Footer;
 }
