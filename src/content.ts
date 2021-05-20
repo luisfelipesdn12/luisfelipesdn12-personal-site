@@ -1,3 +1,4 @@
+import { NextRouter } from 'next/router';
 import { Content } from './models';
 
 type LocatedContent = { [language: string]: Content };
@@ -265,6 +266,10 @@ export const content: LocatedContent = {
     },
 };
 
-export const getLocatedContent = (language: string): Content => {
-    return content[language] || content['en-US'];
+export const getLocatedContent = (router: NextRouter): Content => {
+    return (
+        content[router.locale] ||
+        content[router.defaultLocale] ||
+        content['en-US']
+    );
 };
