@@ -6,7 +6,7 @@ interface ThemeProps {
 
 const theme: ThemeProps = {
     colors: {
-        primary: "#FFFFFF",
+        primary: '#FFFFFF',
     },
 };
 
