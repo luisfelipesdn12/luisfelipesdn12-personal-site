@@ -1,12 +1,17 @@
 import { useRouter } from 'next/router';
+import React from 'react';
+import Footer from '../src/components/parts/Footer';
 import { getLocatedContent } from '../src/content';
 
 const Home: React.FC = () => {
-    const router = useRouter();
+    const content = getLocatedContent(useRouter());
 
-    const content = getLocatedContent(router);
-
-    return <h1>{content.hero.greeting}</h1>;
+    return (
+        <>
+            <h1 style={{ textAlign: 'center' }}>{content.hero.greeting}</h1>
+            <Footer />
+        </>
+    );
 };
 
 export default Home;
