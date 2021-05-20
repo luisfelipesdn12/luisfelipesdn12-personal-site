@@ -1,1 +1,7 @@
-export default () => <h1>Hello</h1>;
+const Home: React.FC = () => {
+    return (
+        <h1>Hello</h1>
+    );
+};
+
+export default Home;
