@@ -6,6 +6,11 @@ export interface HeroSectionContent {
         and: string;
         suffix: string;
     };
+    socialLinks: {
+        imageUrl: string;
+        link: string;
+        alt: string;
+    }[];
     resumeButton: {
         label: string;
         link: string;

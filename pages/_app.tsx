@@ -8,11 +8,50 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeProps }>`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        border-color: #e2e8f0;
+    }
+
+    html {
+        line-height: 1.5;
     }
 
     body {
         background-color: ${props => props.theme.colors.background.simple};
         font-family: 'Asap', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    }
+
+    section {
+        padding: 4rem .75rem;
+        margin: 0 .75rem;
+
+        @media (min-width: 640px) {
+            display: grid;
+            grid-template-columns: repeat(8, minmax(0, 1fr));
+        }
+
+        @media (min-width: 1280px) {
+            grid-template-columns: repeat(6, minmax(0, 1fr));
+        }
+    }
+
+    section > div, header > div {
+        margin: 0 1rem;
+
+        @media (min-width: 640px) {
+            grid-column-start: 2;
+            grid-column-end: 8;
+        }
+
+        @media (min-width: 1280px) {
+            grid-column-end: 6;
+        }
+    }
+
+    header, footer {
+        text-align: center;
+        background-color: ${props => props.theme.colors.background.accent};
     }
 
     h1, h2, h3 {
@@ -27,6 +66,34 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeProps }>`
         color: ${props => props.theme.colors.text.link};
         background-color: transparent;
         text-decoration: inherit;
+    }
+
+    button, input, optgroup, select, textarea {
+        padding: 0;
+        line-height: inherit;
+        color: inherit;
+    }
+
+    button, select {
+        text-transform: none;
+    }
+
+    button, input, optgroup, select, textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+    }
+
+    ol, ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    img, video {
+        max-width: 100%;
+        height: auto;
     }
 `;
 
@@ -115,6 +182,8 @@ const App = ({ Component, pageProps }) => {
                     href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
                     rel="stylesheet"
                 />
+
+                {/* <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" /> */}
             </Head>
             <GlobalStyle theme={theme} />
             <ThemeProvider theme={theme}>
