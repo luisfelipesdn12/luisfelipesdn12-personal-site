@@ -4,11 +4,9 @@ import { getLocatedContent } from '../../content';
 
 const Wrapper = styled.footer`
     padding: 1.5rem 3rem;
-    background-color: ${props => props.theme.colors.background.accent};
 `;
 
 const DevelopedBySentence = styled.p`
-    text-align: center;
     font-weight: 500;
 `;
 

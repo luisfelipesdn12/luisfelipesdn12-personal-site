@@ -13,6 +13,26 @@ export const content: LocatedContent = {
                 and: 'and',
                 suffix: '.',
             },
+            socialLinks: [
+                {
+                    imageUrl:
+                        'https://img.icons8.com/fluent/240/000000/github.png',
+                    link: 'https://github.com/luisfelipesdn12',
+                    alt: 'GitHub',
+                },
+                {
+                    imageUrl:
+                        'https://img.icons8.com/fluent/240/000000/gmail.png',
+                    link: 'mailto:luisfelipesdn12@gmail.com',
+                    alt: 'Email',
+                },
+                {
+                    imageUrl:
+                        'https://img.icons8.com/fluent/240/000000/linkedin.png',
+                    link: 'https://www.linkedin.com/in/luisfelipesdn12',
+                    alt: 'LinkedIn',
+                },
+            ],
             resumeButton: {
                 label: 'Resume',
                 link: '/resume/Luis Felipe - Resume.pdf',
@@ -143,6 +163,26 @@ export const content: LocatedContent = {
                 and: 'e',
                 suffix: '.',
             },
+            socialLinks: [
+                {
+                    imageUrl:
+                        'https://img.icons8.com/fluent/240/000000/github.png',
+                    link: 'https://github.com/luisfelipesdn12',
+                    alt: 'GitHub',
+                },
+                {
+                    imageUrl:
+                        'https://img.icons8.com/fluent/240/000000/gmail.png',
+                    link: 'mailto:luisfelipesdn12@gmail.com',
+                    alt: 'Email',
+                },
+                {
+                    imageUrl:
+                        'https://img.icons8.com/fluent/240/000000/linkedin.png',
+                    link: 'https://www.linkedin.com/in/luisfelipesdn12',
+                    alt: 'LinkedIn',
+                },
+            ],
             resumeButton: {
                 label: 'Currículo',
                 link: '/resume/Luis Felipe - Currículo.pdf',

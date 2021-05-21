@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import React from 'react';
 import Footer from '../src/components/parts/Footer';
+import Hero from '../src/components/parts/Hero';
 import { getLocatedContent } from '../src/content';
 
 const Home: React.FC = () => {
@@ -8,7 +9,7 @@ const Home: React.FC = () => {
 
     return (
         <>
-            <h1 style={{ textAlign: 'center' }}>{content.hero.greeting}</h1>
+            <Hero />
             <Footer />
         </>
     );
