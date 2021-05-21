@@ -5,6 +5,9 @@ type LocatedContent = { [language: string]: Content };
 
 export const content: LocatedContent = {
     'en-US': {
+        meta: {
+            title: 'Luis Felipe - Code Development',
+        },
         hero: {
             greeting: "Hello, I'm Luis Felipe!",
             description: {
@@ -155,6 +158,9 @@ export const content: LocatedContent = {
         },
     },
     'pt-BR': {
+        meta: {
+            title: 'Luis Felipe - Desenvolvimento de Software',
+        },
         hero: {
             greeting: 'Olá, eu sou o Luis Felipe!',
             description: {
