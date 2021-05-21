@@ -1,4 +1,8 @@
-export interface HeroSectionContent {
+interface MetaTagsContent {
+    title: string;
+}
+
+interface HeroSectionContent {
     greeting: string;
     description: {
         prefix: string;
@@ -30,14 +34,12 @@ interface BaseSectionContent<CardListType extends BaseCard = BaseCard> {
     list?: CardListType[];
 }
 
-interface Project extends BaseCard {}
-
 interface Course extends BaseCard {
     institution: string;
     hours: number | string;
 }
 
-export interface Footer {
+interface Footer {
     /** eg. "Developed by" */
     prefix: string;
     /** eg. "Luis Felipe" */
@@ -47,8 +49,9 @@ export interface Footer {
 }
 
 export interface Content {
+    meta: MetaTagsContent;
     hero: HeroSectionContent;
-    projects: BaseSectionContent<Project>;
+    projects: BaseSectionContent;
     education: BaseSectionContent<Course>;
     footer: Footer;
 }
