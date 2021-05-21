@@ -152,7 +152,7 @@ export const content: LocatedContent = {
             ],
         },
         footer: {
-            prefix: 'Developed with HTML, CSS and JavaScript by ',
+            prefix: 'Developed with HTML, CSS and TypeScript by ',
             author: 'Luis Felipe',
             suffix: '.',
         },
@@ -305,7 +305,7 @@ export const content: LocatedContent = {
             ],
         },
         footer: {
-            prefix: 'Desenvolvido com HTML, CSS e JavaScript por ',
+            prefix: 'Desenvolvido com HTML, CSS e TypeScript por ',
             author: 'Luis Felipe',
             suffix: '.',
         },
