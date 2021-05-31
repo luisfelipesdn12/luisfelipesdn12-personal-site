@@ -1,9 +1,10 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import React from 'react';
+import React, { useMemo } from 'react';
+import withDarkMode, { useDarkMode } from 'next-dark-mode';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { getLocatedContent } from '../src/content';
-import theme, { ThemeProps } from '../src/theme';
+import { darkTheme, lightTheme, ThemeProps } from '../src/theme';
 
 const GlobalStyle = createGlobalStyle<{ theme: ThemeProps }>`
     *, ::after, ::before {
@@ -13,6 +14,10 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeProps }>`
         border-width: 0;
         border-style: solid;
         border-color: #e2e8f0;
+    }
+
+    * {
+        transition: all 0.15s;
     }
 
     html {
@@ -100,6 +105,12 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeProps }>`
 `;
 
 const App = ({ Component, pageProps }) => {
+    const { darkModeActive } = useDarkMode();
+
+    const theme = useMemo(() => {
+        return darkModeActive ? darkTheme : lightTheme;
+    }, [darkModeActive]);
+
     const content = getLocatedContent(useRouter());
 
     const lastLanguage =
@@ -198,4 +209,4 @@ const App = ({ Component, pageProps }) => {
     );
 };
 
-export default App;
+export default withDarkMode(App);

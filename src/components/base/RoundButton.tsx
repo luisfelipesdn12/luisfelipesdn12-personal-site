@@ -8,7 +8,7 @@ const Wrapper = styled.button`
     padding: 0.5rem;
     border-radius: 9999px;
     background-color: white;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
+    box-shadow: 0 4px 6px -1px ${props => props.theme.colors.text.title}15, 0 2px 4px -1px ${props => props.theme.colors.text.title}15;
 `;
 
 const Icon = styled.img`

@@ -20,7 +20,7 @@ const Select = styled.select`
     -webkit-appearance: none;
     -moz-appearance: none;
 
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
+    box-shadow: 0 4px 6px -1px ${props => props.theme.colors.text.title}15, 0 2px 4px -1px ${props => props.theme.colors.text.title}15;
 `;
 
 const SelectIcon = styled.div`
@@ -38,7 +38,7 @@ const SelectIcon = styled.div`
     svg {
         width: 1rem;
         height: 1rem;
-        fill: currentColor;
+        fill: #0D0D0D;
     }
 `;
 

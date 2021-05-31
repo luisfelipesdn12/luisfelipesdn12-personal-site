@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import RoundButton from '../../../base/RoundButton';
 import LanguageSelector from './LanguageSelector';
+import ThemeSwitcher from './ThemeSwitcher';
 
 const Wrapper = styled.nav`
     display: flex;
@@ -37,6 +38,9 @@ const NavBar: React.FC = () => {
                 }}
             />
             <ButtonList>
+                <li>
+                    <ThemeSwitcher />
+                </li>
                 <li>
                     <LanguageSelector />
                 </li>
