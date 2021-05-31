@@ -12,7 +12,7 @@ export interface ThemeProps {
     };
 }
 
-const theme: ThemeProps = {
+export const lightTheme: ThemeProps = {
     colors: {
         text: {
             title: '#1A202C',
@@ -26,4 +26,16 @@ const theme: ThemeProps = {
     },
 };
 
-export default theme;
+export const darkTheme: ThemeProps = {
+    colors: {
+        text: {
+            title: '#D3D9E5',
+            simple: '#D3D9E57D',
+            link: '#3078C4',
+        },
+        background: {
+            simple: '#0D0D0D',
+            accent: '#171717',
+        },
+    },
+};
