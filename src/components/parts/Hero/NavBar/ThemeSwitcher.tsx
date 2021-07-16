@@ -1,7 +1,6 @@
 import { useDarkMode } from 'next-dark-mode';
-import { useRouter } from 'next/router';
-import { useEffect, useRef } from 'react';
 import styled from 'styled-components';
+import { useContent } from '../../../../content';
 
 const Container = styled.div`
     display: inline-block;
@@ -16,23 +15,26 @@ const Container = styled.div`
     user-select: none;
     cursor: pointer;
 
-    box-shadow: 0 4px 6px -1px ${props => props.theme.colors.text.title}15, 0 2px 4px -1px ${props => props.theme.colors.text.title}15;
+    box-shadow: 0 4px 6px -1px ${props => props.theme.colors.text.title}15,
+        0 2px 4px -1px ${props => props.theme.colors.text.title}15;
 `;
 
 const ThemeSwitcher: React.FC = () => {
-    const {
-        darkModeActive,
-        switchToDarkMode,
-        switchToLightMode
-    } = useDarkMode();
+    const { darkModeActive, switchToDarkMode, switchToLightMode } =
+        useDarkMode();
+
+    const content = useContent();
 
     return (
         <Container
-            title={darkModeActive ? "Light mode" : "Dark mode"}
-            aria-label={darkModeActive ? "Light mode" : "Dark mode"}
+            title={
+                darkModeActive
+                    ? content.hero.navBar.themeSwitcher.turnToLight
+                    : content.hero.navBar.themeSwitcher.turnToDark
+            }
             onClick={darkModeActive ? switchToLightMode : switchToDarkMode}
         >
-            {darkModeActive ? "🌔" : "🌒"}
+            {darkModeActive ? '🌔' : '🌒'}
         </Container>
     );
 };

@@ -1,15 +1,13 @@
-import { useRouter } from 'next/router';
 import React from 'react';
 import Footer from '../src/components/parts/Footer';
 import Hero from '../src/components/parts/Hero';
-import { getLocatedContent } from '../src/content';
+import Skills from '../src/components/parts/Skills';
 
 const Home: React.FC = () => {
-    const content = getLocatedContent(useRouter());
-
     return (
         <>
             <Hero />
+            <Skills />
             <Footer />
         </>
     );
