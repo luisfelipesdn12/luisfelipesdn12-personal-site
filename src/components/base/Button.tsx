@@ -12,7 +12,8 @@ const Wrapper = styled.button`
     color: ${props => props.theme.colors.background.simple};
     background-color: ${props => props.theme.colors.text.title};
 
-    box-shadow: 0 4px 6px -1px ${props => props.theme.colors.text.title}15, 0 2px 4px -1px ${props => props.theme.colors.text.title}15;
+    box-shadow: 0 4px 6px -1px ${props => props.theme.colors.text.title}15,
+        0 2px 4px -1px ${props => props.theme.colors.text.title}15;
 `;
 
 interface ButtonProps {

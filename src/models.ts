@@ -3,6 +3,17 @@ interface MetaTagsContent {
 }
 
 interface HeroSectionContent {
+    navBar: {
+        themeSwitcher: {
+            turnToDark: string;
+            turnToLight: string;
+        };
+        languageSelector: {
+            title: string;
+            turnToEn: string;
+            turnToPt: string;
+        };
+    };
     greeting: string;
     description: {
         prefix: string;
@@ -21,7 +32,7 @@ interface HeroSectionContent {
     };
 }
 
-interface BaseCard {
+export interface BaseCard {
     imageUrl: string;
     name: string;
     description: string;
@@ -51,6 +62,7 @@ interface Footer {
 export interface Content {
     meta: MetaTagsContent;
     hero: HeroSectionContent;
+    skills: BaseSectionContent;
     projects: BaseSectionContent;
     education: BaseSectionContent<Course>;
     footer: Footer;

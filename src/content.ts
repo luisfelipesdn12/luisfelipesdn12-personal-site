@@ -1,7 +1,10 @@
-import { NextRouter } from 'next/router';
+import { NextRouter, useRouter } from 'next/router';
 import { Content } from './models';
 
-type LocatedContent = { [language: string]: Content };
+type Language = 'en-US' | 'pt-BR';
+type LocatedContent = {
+    [language in Language]: Content;
+};
 
 export const content: LocatedContent = {
     'en-US': {
@@ -9,6 +12,17 @@ export const content: LocatedContent = {
             title: 'Luis Felipe - Code Development',
         },
         hero: {
+            navBar: {
+                themeSwitcher: {
+                    turnToDark: 'Turn to Dark mode',
+                    turnToLight: 'Turn to Light mode',
+                },
+                languageSelector: {
+                    title: 'Language Selector',
+                    turnToEn: 'Turn to English',
+                    turnToPt: 'Turn to Portuguese',
+                },
+            },
             greeting: "Hello, I'm Luis Felipe!",
             description: {
                 prefix: "I'm a computer science student and I can code for: automations, websites, machine learning, APIs and data science. My main languages are ",
@@ -18,20 +32,17 @@ export const content: LocatedContent = {
             },
             socialLinks: [
                 {
-                    imageUrl:
-                        'https://img.icons8.com/fluent/240/000000/github.png',
+                    imageUrl: '/social/github.png',
                     link: 'https://github.com/luisfelipesdn12',
                     alt: 'GitHub',
                 },
                 {
-                    imageUrl:
-                        'https://img.icons8.com/fluent/240/000000/gmail.png',
+                    imageUrl: '/social/gmail.png',
                     link: 'mailto:luisfelipesdn12@gmail.com',
                     alt: 'Email',
                 },
                 {
-                    imageUrl:
-                        'https://img.icons8.com/fluent/240/000000/linkedin.png',
+                    imageUrl: '/social/linkedin.png',
                     link: 'https://www.linkedin.com/in/luisfelipesdn12',
                     alt: 'LinkedIn',
                 },
@@ -40,6 +51,86 @@ export const content: LocatedContent = {
                 label: 'Resume',
                 link: '/resume/Luis Felipe - Resume.pdf',
             },
+        },
+        skills: {
+            title: 'Skills',
+            description: 'Programming languages and tools.',
+            list: [
+                {
+                    name: 'Python',
+                    description:
+                        'Automation, data science, bots, machine learning, graphic interface and competittive programming',
+                    imageUrl: '/skills/python.png',
+                },
+                {
+                    name: 'Typescript/Javascript',
+                    description:
+                        'APIs development (REST and GraphQL), web development, NodeJS',
+                    imageUrl: '/skills/typescript.png',
+                },
+                {
+                    name: 'HTML & CSS',
+                    description:
+                        'Web development, best pratices, semantic tags, SEO metatags',
+                    imageUrl: '/skills/html-5.png',
+                },
+                {
+                    name: 'Go',
+                    description: 'APIs development, packages, automation',
+                    imageUrl: '/skills/golang.png',
+                },
+                {
+                    name: 'Java',
+                    description: 'REST APIs, Graddle, Spring Boot, etc',
+                    imageUrl: '/skills/java.png',
+                },
+                {
+                    name: 'React.js',
+                    description:
+                        'Components, hooks, GraphQL and REST clients, etc',
+                    imageUrl: '/skills/react.png',
+                },
+                {
+                    name: 'Next.js',
+                    description:
+                        'Type safety with Typescript, both frontend with React and backend with REST API, optimizations',
+                    imageUrl: '/skills/nextjs.png',
+                },
+                {
+                    name: 'Jupyter/Google Colab Notebooks',
+                    description:
+                        'Data science, exploratory analysis, data visualization',
+                    imageUrl: '/skills/notebook-emoji.png',
+                },
+                {
+                    name: 'Electron',
+                    description: 'Desktop Graphic User Interface',
+                    imageUrl: '/skills/electron.png',
+                },
+                {
+                    name: 'Linux/Shell',
+                    description:
+                        'Command line interface, tools, process, packages',
+                    imageUrl: '/skills/console.png',
+                },
+                {
+                    name: 'Arduino',
+                    description:
+                        'Automations, electronic, embeded systems, projects development',
+                    imageUrl: '/skills/arduino.png',
+                },
+                {
+                    name: 'PostgreSQL',
+                    description:
+                        'Best pratices, TypeORM, security, data protection laws, etc',
+                    imageUrl: '/skills/postgresql.png',
+                },
+                {
+                    name: 'Jest',
+                    description: 'Unit tests, Mocks, type safety, etc',
+                    imageUrl: '/skills/joker.png',
+                },
+            ],
         },
         projects: {
             title: 'Projects',
@@ -162,6 +253,17 @@ export const content: LocatedContent = {
             title: 'Luis Felipe - Desenvolvimento de Software',
         },
         hero: {
+            navBar: {
+                themeSwitcher: {
+                    turnToDark: 'Trocar para modo Escuro',
+                    turnToLight: 'Trocar para modo Claro',
+                },
+                languageSelector: {
+                    title: 'Seletor de idioma',
+                    turnToEn: 'Trocar para Inglês',
+                    turnToPt: 'Trocar para Português',
+                },
+            },
             greeting: 'Olá, eu sou o Luis Felipe!',
             description: {
                 prefix: 'Sou um estudante de ciência da computação e posso desenvolver: automações, sites, machine learning, APIs e data science. Minhas principais linguagens de programação são ',
@@ -171,20 +273,17 @@ export const content: LocatedContent = {
             },
             socialLinks: [
                 {
-                    imageUrl:
-                        'https://img.icons8.com/fluent/240/000000/github.png',
+                    imageUrl: '/social/github.png',
                     link: 'https://github.com/luisfelipesdn12',
                     alt: 'GitHub',
                 },
                 {
-                    imageUrl:
-                        'https://img.icons8.com/fluent/240/000000/gmail.png',
+                    imageUrl: '/social/gmail.png',
                     link: 'mailto:luisfelipesdn12@gmail.com',
                     alt: 'Email',
                 },
                 {
-                    imageUrl:
-                        'https://img.icons8.com/fluent/240/000000/linkedin.png',
+                    imageUrl: '/social/linkedin.png',
                     link: 'https://www.linkedin.com/in/luisfelipesdn12',
                     alt: 'LinkedIn',
                 },
@@ -193,6 +292,22 @@ export const content: LocatedContent = {
                 label: 'Currículo',
                 link: '/resume/Luis Felipe - Currículo.pdf',
             },
+        },
+        skills: {
+            title: 'Habilidades',
+            description: 'Linguagens de programação e ferramentas.',
+            list: [
+                {
+                    name: 'Python',
+                    description: 'I do things',
+                    imageUrl: '/skills/python.png',
+                },
+                {
+                    name: 'Typescript',
+                    description: 'I do things with types too',
+                    imageUrl: '/skills/typescript.png',
+                },
+            ],
         },
         projects: {
             title: 'Projetos',
@@ -313,9 +428,20 @@ export const content: LocatedContent = {
 };
 
 export const getLocatedContent = (router: NextRouter): Content => {
-    return (
-        content[router.locale] ||
-        content[router.defaultLocale] ||
-        content['en-US']
-    );
+    const contentSelected =
+        content[router.locale] || content[router.defaultLocale] || {};
+
+    return {
+        ...content['en-US'],
+        ...contentSelected,
+    };
+};
+
+/**
+ * Returns the content with the
+ * current idiom.
+ */
+export const useContent = (): Content => {
+    const router = useRouter();
+    return getLocatedContent(router);
 };

@@ -1,4 +1,5 @@
 export interface ThemeProps {
+    themeName: string;
     colors: {
         text: {
             title: string;
@@ -13,6 +14,7 @@ export interface ThemeProps {
 }
 
 export const lightTheme: ThemeProps = {
+    themeName: 'light',
     colors: {
         text: {
             title: '#1A202C',
@@ -27,10 +29,11 @@ export const lightTheme: ThemeProps = {
 };
 
 export const darkTheme: ThemeProps = {
+    themeName: 'dark',
     colors: {
         text: {
             title: '#D3D9E5',
-            simple: '#D3D9E57D',
+            simple: '#D3D9E5DD',
             link: '#3078C4',
         },
         background: {

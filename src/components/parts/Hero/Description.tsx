@@ -1,12 +1,11 @@
-import { useRouter } from 'next/router';
 import React from 'react';
 import styled from 'styled-components';
-import { getLocatedContent } from '../../../content';
+import { useContent } from '../../../content';
 
-const Wrapper = styled.p`
+export const DescriptionWrapper = styled.p`
     font-size: 1.5rem;
 
-    span {
+    strong {
         color: ${props => props.theme.colors.text.link};
         font-weight: 600;
     }
@@ -16,10 +15,10 @@ const Wrapper = styled.p`
  * The "biography-like" description of me.
  */
 const Description: React.FC = () => {
-    const content = getLocatedContent(useRouter());
+    const content = useContent();
 
     return (
-        <Wrapper>
+        <DescriptionWrapper>
             {content.hero.description.prefix}
             {content.hero.description.languages.map(
                 (language, index, array) => {
@@ -40,15 +39,15 @@ const Description: React.FC = () => {
                     }
 
                     return (
-                        <>
-                            <span key={index}>{language}</span>
+                        <span key={index}>
+                            <strong>{language}</strong>
                             {separator}
-                        </>
+                        </span>
                     );
                 },
             )}
             {content.hero.description.suffix}
-        </Wrapper>
+        </DescriptionWrapper>
     );
 };
 

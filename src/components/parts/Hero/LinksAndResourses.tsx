@@ -1,7 +1,6 @@
-import { useRouter } from 'next/router';
 import React, { CSSProperties } from 'react';
 import styled from 'styled-components';
-import { getLocatedContent } from '../../../content';
+import { useContent } from '../../../content';
 import Button from '../../base/Button';
 import RoundButton from '../../base/RoundButton';
 
@@ -22,7 +21,7 @@ const roundButtonAditionalStyling: CSSProperties = {
  * (eg. Resume).
  */
 const LinksAndResourses: React.FC = () => {
-    const content = getLocatedContent(useRouter());
+    const content = useContent();
 
     return (
         <>

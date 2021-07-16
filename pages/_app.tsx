@@ -1,10 +1,9 @@
 import Head from 'next/head';
-import { useRouter } from 'next/router';
 import React, { useMemo } from 'react';
 import withDarkMode, { useDarkMode } from 'next-dark-mode';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import { getLocatedContent } from '../src/content';
 import { darkTheme, lightTheme, ThemeProps } from '../src/theme';
+import { useContent } from '../src/content';
 
 const GlobalStyle = createGlobalStyle<{ theme: ThemeProps }>`
     *, ::after, ::before {
@@ -43,7 +42,8 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeProps }>`
         }
     }
 
-    section > div, header > div {
+    header > div,
+    section > div {
         margin: 0 1rem;
 
         @media (min-width: 640px) {
@@ -65,7 +65,12 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeProps }>`
         color: ${props => props.theme.colors.text.title};
     }
 
-    p {
+    h1 {
+        font-weight: 700;
+        font-size: 2.25rem;
+    }
+
+    p, strong {
         color: ${props => props.theme.colors.text.simple};
     }
 
@@ -111,7 +116,7 @@ const App = ({ Component, pageProps }) => {
         return darkModeActive ? darkTheme : lightTheme;
     }, [darkModeActive]);
 
-    const content = getLocatedContent(useRouter());
+    const content = useContent();
 
     const lastLanguage =
         content.hero.description.languages[

@@ -1,6 +1,5 @@
-import { useRouter } from 'next/router';
 import styled from 'styled-components';
-import { getLocatedContent } from '../../content';
+import { useContent } from '../../content';
 
 const Wrapper = styled.footer`
     padding: 1.5rem 3rem;
@@ -11,7 +10,7 @@ const DevelopedBySentence = styled.p`
 `;
 
 const Footer: React.FC = () => {
-    const content = getLocatedContent(useRouter());
+    const content = useContent();
 
     return (
         <Wrapper>
