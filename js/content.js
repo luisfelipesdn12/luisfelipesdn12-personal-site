@@ -1,7 +1,7 @@
 export const HERO = {
     ENGLISH : {
         greeting : "Hello, I'm Luis Felipe!",
-        sentence : 'I\'m a computer science student and I can code for: automations, websites, machine learning, APIs and data science. My main languages are <span class="text-blue-700 font-semibold">Python</span>, <span class="text-blue-700 font-semibold">TypeScript</span> and <span class="text-blue-700 font-semibold">Go</span>.',
+        sentence : 'I\'m a information system student and I can code for: automations, websites, machine learning, APIs and data science. My main languages are <span class="text-blue-700 font-semibold">TypeScript</span>, <span class="text-blue-700 font-semibold">Python</span> and <span class="text-blue-700 font-semibold">Go</span>.',
         resumeButton : {
             text: "Resume",
             href: "./assets/resume/Luis Felipe - Resume.pdf"
@@ -9,7 +9,7 @@ export const HERO = {
     },
     PORTUGUESE : {
         greeting : "Olá, eu sou o Luis Felipe!",
-        sentence : 'Sou um estudante de ciência da computação e posso desenvolver: automações, sites, machine learning, APIs e data science. Minhas principais linguagens de programação são <span class="text-blue-700 font-semibold">Python</span>, <span class="text-blue-700 font-semibold">TypeScript</span> e <span class="text-blue-700 font-semibold">Go</span>.',
+        sentence : 'Sou um estudante de sistemas de informação e posso desenvolver: sites, automações, machine learning, APIs e data science. Minhas principais linguagens de programação são <span class="text-blue-700 font-semibold">TypeScript</span>, <span class="text-blue-700 font-semibold">Python</span> e <span class="text-blue-700 font-semibold">Go</span>.',
         resumeButton : {
             text: "Currículo",
             href: "./assets/resume/Luis Felipe - Currículo.pdf"
@@ -23,14 +23,14 @@ export const LANGUAGES = {
         description : "Programming languages I can develop. Click in the language to see my repositories with it.",
         unorderedList : [
             {
-                name : "Python",
-                iDoWith : "Automation, data science, graphic interface.",
-                image : "../assets/languages/python.png"
+                name : "TypeScript",
+                iDoWith : "Node.js, React.js, Next.js, React Native, Express, Angular.",
+                image : "../assets/languages/typescript.svg"
             },
             {
-                name : "Java",
-                iDoWith : "Backend development, REST APIs.",
-                image : "../assets/languages/java.png"
+                name : "Python",
+                iDoWith : "Automation, data science, graphic interface, APIs, etc.",
+                image : "../assets/languages/python.png"
             },
             {
                 name : "Go",
@@ -39,13 +39,13 @@ export const LANGUAGES = {
             },
             {
                 name : "HTML",
-                iDoWith : "Web sites, integrations with CSS libraries.",
+                iDoWith : "Websites, integrations with CSS libraries.",
                 image : "../assets/languages/html-5.png"
             },
             {
-                name : "JavaScript",
-                iDoWith : "API consume, dynamic content in HTML.",
-                image : "../assets/languages/javascript.png"
+                name : "Dart",
+                iDoWith : "Flutter Mobile Development, APIs.",
+                image : "../assets/languages/dart.svg"
             },
             {
                 name : "C/C++",
@@ -59,14 +59,14 @@ export const LANGUAGES = {
         description : "Linguagens de programação em que poso desenvolver. Clique na linguagem para ver meus repositórios com ela.",
         unorderedList : [
             {
-                name : "Python",
-                iDoWith : "Automação, data science, interfaces gráficas.",
-                image : "../assets/languages/python.png"
+                name : "TypeScript",
+                iDoWith : "Node.js, React.js, Next.js, React Native, Express, Angular.",
+                image : "../assets/languages/typescript.svg"
             },
             {
-                name : "Java",
-                iDoWith : "Desenvolvimento backend, APIs REST. ",
-                image : "../assets/languages/java.png"
+                name : "Python",
+                iDoWith : "Automação, data science, interfaces gráficas, APIs, etc.",
+                image : "../assets/languages/python.png"
             },
             {
                 name : "Go",
@@ -79,9 +79,9 @@ export const LANGUAGES = {
                 image : "../assets/languages/html-5.png"
             },
             {
-                name : "JavaScript",
-                iDoWith : "Consumo de APIs, conteúdo dinâmico em HTML.",
-                image : "../assets/languages/javascript.png"
+                name : "Dart",
+                iDoWith : "Desenvolvimento Mobile com Flutter, APIs.",
+                image : "../assets/languages/dart.svg"
             },
             {
                 name : "C/C++",
@@ -185,6 +185,14 @@ export const EDUCATION = {
         description : "My background in formal education, in addition to technologies courses and studies of interest.",
         unorderedList : [
             {
+                image: "https://www.mackenzie.br/fileadmin/_processed_/f/5/csm_anivers%C3%A1rio_de_69_anos_da_upm_4f6da48ba8.jpg",
+                name: "Information Systems",
+                description: "Bachelor's degree in Information Systems, a course that involves both technical and managerial bases and soft-skills.",
+                institution: "Universidade Presbiteriana Mackenzie",
+                hours: "1 de 8 sem.",
+                href: "https://www.mackenzie.br/graduacao/sao-paulo-higienopolis/sistemas-de-informacao/"
+            },
+            {
                 image: "../assets/education/python-curso-em-video.jpg",
                 name: "Python 3 Course",
                 description: "Created by Prof. Gustavo Guanabara to \"Curso em Vídeo\", it shows from basics concepts to errors handling with the Python programming language.",
@@ -224,14 +232,6 @@ export const EDUCATION = {
                 institution: "Aprenda Go - Ellen Körbes",
                 hours: 22,
                 href: "https://www.youtube.com/playlist?list=PLCKpcjBB_VlBsxJ9IseNxFllf-UFEXOdg"
-            },
-            {
-                image: "../assets/education/high-school.jpg",
-                name: "High School",
-                description: "Brazilian High School. Subjects as Portuguese Language, Mathematics, Chemistry, Sociology, Arts, Physics, English Language, Geography, Philosophy, Biology, etc.",
-                institution: "State of Sao Paulo",
-                hours: "1050 of 3150",
-                href: "https://inova.educacao.sp.gov.br/"
             }
         ]
     },
@@ -239,6 +239,14 @@ export const EDUCATION = {
         title : "Educação",
         description : "Minha formação em educação formal, além de cursos de tecnologia e estudos de interesse.",
         unorderedList : [
+            {
+                image: "https://www.mackenzie.br/fileadmin/_processed_/f/5/csm_anivers%C3%A1rio_de_69_anos_da_upm_4f6da48ba8.jpg",
+                name: "Sistemas de Informação",
+                description: "Bacharel em Sistemas de Informação, curso que envolve tanto as bases técnicas quanto em gestão e soft-skills.",
+                institution: "Universidade Presbiteriana Mackenzie",
+                hours: "1 de 8 sem.",
+                href: "https://www.mackenzie.br/graduacao/sao-paulo-higienopolis/sistemas-de-informacao/"
+            },
             {
                 image: "../assets/education/python-curso-em-video.jpg",
                 name: "Curso de Python 3",
@@ -279,14 +287,6 @@ export const EDUCATION = {
                 institution: "Aprenda Go - Ellen Körbes",
                 hours: 22,
                 href: "https://www.youtube.com/playlist?list=PLCKpcjBB_VlBsxJ9IseNxFllf-UFEXOdg"
-            },
-            {
-                image: "../assets/education/high-school.jpg",
-                name: "Ensino Médio",
-                description: "Ensino Médio Brasileiro. Disciplinas como Língua Portuguesa, Matemática, Química, Sociologia, Artes, Física, Língua Inglesa, Geografia, Filosofia, Biologia, etc.",
-                institution: "Estado de São Paulo",
-                hours: "1050 de 3150",
-                href: "https://inova.educacao.sp.gov.br/"
             }
         ]
     }
