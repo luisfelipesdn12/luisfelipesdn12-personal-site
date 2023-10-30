@@ -123,7 +123,7 @@ export function addToCourseList(course) {
     institutionAndHours.appendChild(institution);
 
     const hours = document.createElement("p");
-    hours.innerHTML = `${course.hours} h`;
+    hours.innerHTML = typeof course.hours != "string" ? `${course.hours} h` : course.hours;
     institutionAndHours.appendChild(hours);
 }
 
