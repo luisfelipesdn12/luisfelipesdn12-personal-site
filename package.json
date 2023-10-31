@@ -7,9 +7,9 @@
     "license": "MIT",
     "private": false,
     "scripts": {
-        "dev": "next",
-        "build": "next build",
-        "start": "next start",
+        "dev": "export SET NODE_OPTIONS=--openssl-legacy-provider && next",
+        "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && next build",
+        "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && next start",
         "lint": "yarn prettier --check --ignore-unknown ./pages/** ./src/**",
         "lint:fix": "yarn prettier --write --ignore-unknown ./pages/** ./src/**"
     },

@@ -26,7 +26,7 @@ export const content: LocatedContent = {
             greeting: "Hello, I'm Luis Felipe!",
             description: {
                 prefix: "I'm a computer science student and I can code for: automations, websites, machine learning, APIs and data science. My main languages are ",
-                languages: ['Python', 'TypeScript', 'Go'],
+                languages: ['TypeScript', 'Python', 'Go'],
                 and: 'and',
                 suffix: '.',
             },
@@ -57,32 +57,27 @@ export const content: LocatedContent = {
             description: 'Programming languages and tools.',
             list: [
                 {
-                    name: 'Python',
-                    description:
-                        'Automation, data science, bots, machine learning, graphic interface and competittive programming',
-                    imageUrl: '/skills/python.png',
-                },
-                {
                     name: 'Typescript/Javascript',
                     description:
                         'APIs development (REST and GraphQL), web development, NodeJS',
                     imageUrl: '/skills/typescript.png',
                 },
                 {
-                    name: 'HTML & CSS',
+                    name: 'Python',
                     description:
-                        'Web development, best pratices, semantic tags, SEO metatags',
-                    imageUrl: '/skills/html-5.png',
+                        'Automation, data science, bots, machine learning, graphic interface and competittive programming',
+                    imageUrl: '/skills/python.png',
+                },
+                {
+                    name: 'Next.js',
+                    description:
+                        'Type safety with Typescript, both frontend with React and backend with REST API, optimizations',
+                    imageUrl: '/skills/nextjs.png',
                 },
                 {
                     name: 'Go',
                     description: 'APIs development, packages, automation',
                     imageUrl: '/skills/golang.png',
-                },
-                {
-                    name: 'Java',
-                    description: 'REST APIs, Graddle, Spring Boot, etc',
-                    imageUrl: '/skills/java.png',
                 },
                 {
                     name: 'React.js',
@@ -91,10 +86,20 @@ export const content: LocatedContent = {
                     imageUrl: '/skills/react.png',
                 },
                 {
-                    name: 'Next.js',
+                    name: 'Dart',
+                    description: 'Flutter Mobile Development, etc',
+                    imageUrl: '/skills/dart.png',
+                },
+                {
+                    name: 'Java',
+                    description: 'REST APIs, Graddle, Spring Boot, etc',
+                    imageUrl: '/skills/java.png',
+                },
+                {
+                    name: 'HTML & CSS',
                     description:
-                        'Type safety with Typescript, both frontend with React and backend with REST API, optimizations',
-                    imageUrl: '/skills/nextjs.png',
+                        'Web development, best pratices, semantic tags, SEO metatags',
+                    imageUrl: '/skills/html-5.png',
                 },
                 {
                     name: 'Jupyter/Google Colab Notebooks',
@@ -267,7 +272,7 @@ export const content: LocatedContent = {
             greeting: 'Olá, eu sou o Luis Felipe!',
             description: {
                 prefix: 'Sou um estudante de ciência da computação e posso desenvolver: automações, sites, machine learning, APIs e data science. Minhas principais linguagens de programação são ',
-                languages: ['Python', 'TypeScript', 'Go'],
+                languages: ['TypeScript', 'Python', 'Go'],
                 and: 'e',
                 suffix: '.',
             },
@@ -298,14 +303,83 @@ export const content: LocatedContent = {
             description: 'Linguagens de programação e ferramentas.',
             list: [
                 {
+                    name: 'Typescript/Javascript',
+                    description:
+                        'Desenvolvimento de APIs (REST e GraphQL), desenvolvimento web, NodeJS',
+                    imageUrl: '/skills/typescript.png',
+                },
+                {
                     name: 'Python',
-                    description: 'I do things',
+                    description:
+                        'Automação, ciência de dados, bots, machine learning, interface gráfica e programação competitiva',
                     imageUrl: '/skills/python.png',
                 },
                 {
-                    name: 'Typescript',
-                    description: 'I do things with types too',
-                    imageUrl: '/skills/typescript.png',
+                    name: 'Next.js',
+                    description:
+                        'Tipagem com Typescript, tanto frontend com React quanto backend com APIs, otimizações',
+                    imageUrl: '/skills/nextjs.png',
+                },
+                {
+                    name: 'Go',
+                    description: 'Desenvolvimento de APIs, pacotes, automação',
+                    imageUrl: '/skills/golang.png',
+                },
+                {
+                    name: 'React.js',
+                    description:
+                        'Componentes, hooks, GraphQL e clientes REST',
+                    imageUrl: '/skills/react.png',
+                },
+                {
+                    name: 'Dart',
+                    description: 'Desenvolvimento Mobile com Flutter, etc',
+                    imageUrl: '/skills/dart.png',
+                },
+                {
+                    name: 'Java',
+                    description: 'REST APIs, Graddle, Spring Boot, etc',
+                    imageUrl: '/skills/java.png',
+                },
+                {
+                    name: 'HTML & CSS',
+                    description:
+                        'Desenvolvimento web, melhores práticas, tags semânticas, SEO',
+                    imageUrl: '/skills/html-5.png',
+                },
+                {
+                    name: 'Jupyter/Google Colab Notebooks',
+                    description:
+                        'Ciência de dados, análise exploratória, visualização de dados',
+                    imageUrl: '/skills/notebook-emoji.png',
+                },
+                {
+                    name: 'Electron',
+                    description: 'Interface Gráfica para desktop',
+                    imageUrl: '/skills/electron.png',
+                },
+                {
+                    name: 'Linux/Shell',
+                    description:
+                        'Interface de linha de comando, ferramentas, processos, pacotes',
+                    imageUrl: '/skills/console.png',
+                },
+                {
+                    name: 'Arduino',
+                    description:
+                        'Eutomações, eletrônica, sistemas embarcados, desenvolvimento de projetos',
+                    imageUrl: '/skills/arduino.png',
+                },
+                {
+                    name: 'PostgreSQL',
+                    description:
+                        'Melhores práticas, TypeORM, segurança, leis de proteção de dados, etc',
+                    imageUrl: '/skills/postgresql.png',
+                },
+                {
+                    name: 'Jest',
+                    description: 'Testes unitários, Mocks, tipagem, etc',
+                    imageUrl: '/skills/joker.png',
                 },
             ],
         },
