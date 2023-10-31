@@ -61,7 +61,7 @@ const EducationItem: React.FC<EducationItemProps> = ({ education }) => (
             alt={education.name}
         />
         <Description>
-            <h1>{education.name}</h1>
+            <h1 dangerouslySetInnerHTML={{ __html: education.name }}></h1>
             <p dangerouslySetInnerHTML={{ __html: education.description }}></p>
         </Description>
         <DivisorLine />
