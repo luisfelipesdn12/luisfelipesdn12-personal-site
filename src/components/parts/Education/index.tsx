@@ -47,9 +47,11 @@ const Education: React.FC<EducationsProps> = ({ previewCont = 6 }) => {
                     {content.education.list.slice(0, previewCont).map(education => (
                         <EducationItem education={education} />
                     ))}
-                    <SeeMoreEducations
-                        nextEducations={content.education.list.slice(previewCont)}
-                    />
+                    {content.education.list.slice(previewCont).length && (
+                        <SeeMoreEducations
+                            nextEducations={content.education.list.slice(previewCont)}
+                        />
+                    )}
                 </EducationsList>
             </div>
         </Wrapper>

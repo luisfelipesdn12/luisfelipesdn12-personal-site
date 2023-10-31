@@ -44,9 +44,11 @@ const Skills: React.FC<SkillsProps> = ({ previewCont = 5 }) => {
                     {content.skills.list.slice(0, previewCont).map(skill => (
                         <SkillItem skill={skill} />
                     ))}
-                    <SeeMoreSkills
-                        nextSkills={content.skills.list.slice(previewCont)}
-                    />
+                    {content.skills.list.slice(previewCont).length && (
+                        <SeeMoreSkills
+                            nextSkills={content.skills.list.slice(previewCont)}
+                        />
+                    )}
                 </SkillsList>
             </div>
         </Wrapper>

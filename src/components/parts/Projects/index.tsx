@@ -47,9 +47,11 @@ const Projects: React.FC<ProjectsProps> = ({ previewCont = 6 }) => {
                     {content.projects.list.slice(0, previewCont).map(project => (
                         <ProjectItem project={project} />
                     ))}
-                    <SeeMoreProjects
-                        nextProjects={content.projects.list.slice(previewCont)}
-                    />
+                    {content.projects.list.slice(previewCont).length && (
+                        <SeeMoreProjects
+                            nextProjects={content.projects.list.slice(previewCont)}
+                        />
+                    )}
                 </ProjectsList>
             </div>
         </Wrapper>
