@@ -4,6 +4,7 @@ import { BaseCard } from '../../../models';
 
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { useContent } from '../../../content';
 
 const Wrapper = styled.div`
     display: block;
@@ -48,6 +49,7 @@ interface SeeMoreSkillsProps {
 }
 
 const SeeMoreSkills: React.FC<SeeMoreSkillsProps> = ({ nextSkills }) => {
+    const content = useContent();
     const router = useRouter();
 
     return (
@@ -69,8 +71,8 @@ const SeeMoreSkills: React.FC<SeeMoreSkillsProps> = ({ nextSkills }) => {
                     </SkillIcon>
                 ))}
             </Mosaic>
-            <strong>See more</strong>
-            <p>Click here to see the complete set of skills</p>
+            <strong>{content.common.seeMore}</strong>
+            <p>{content.common.clickToSeeMore} {content.skills.title.toLowerCase()}</p>
         </Wrapper>
     );
 };

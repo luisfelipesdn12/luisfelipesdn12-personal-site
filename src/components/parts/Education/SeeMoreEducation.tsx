@@ -36,7 +36,7 @@ const Mosaic = styled.div`
     }
 `;
 
-const ProjectIcon = styled.span<{ index: number }>`
+const EducationIcon = styled.span<{ index: number }>`
     width: 2rem;
     height: 2rem;
     user-select: none;
@@ -44,38 +44,37 @@ const ProjectIcon = styled.span<{ index: number }>`
     grid-row: ${props => Math.floor(props.index / 3) + 1};
 `;
 
-interface SeeMoreProjectsProps {
-    nextProjects: BaseCard[];
+interface SeeMoreEducationsProps {
+    nextEducations: BaseCard[];
 }
 
-const SeeMoreProjects: React.FC<SeeMoreProjectsProps> = ({ nextProjects }) => {
+const SeeMoreEducations: React.FC<SeeMoreEducationsProps> = ({ nextEducations }) => {
     const content = useContent();
     const router = useRouter();
 
     return (
         <Wrapper
             onClick={() => {
-                router.push('/projects');
+                router.push('/education');
             }}
         >
             <Mosaic>
-                {nextProjects.slice(0, 9).map((project, index) => (
-                    <ProjectIcon index={index}>
+                {nextEducations.slice(0, 9).map((education, index) => (
+                    <EducationIcon index={index}>
                         <Image
-                            alt={project.name}
-                            src={project.imageUrl}
+                            alt={education.name}
+                            src={education.imageUrl}
                             width={30}
                             height={30}
                             quality={100}
                         />
-                    </ProjectIcon>
+                    </EducationIcon>
                 ))}
             </Mosaic>
-
             <strong>{content.common.seeMore}</strong>
-            <p>{content.common.clickToSeeMore} {content.projects.title.toLowerCase()}</p>
+            <p>{content.common.clickToSeeMore} {content.education.title.toLowerCase()}</p>
         </Wrapper>
     );
 };
 
-export default SeeMoreProjects;
+export default SeeMoreEducations;
