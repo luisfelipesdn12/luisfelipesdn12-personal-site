@@ -60,7 +60,7 @@ const LanguageSelector: React.FC = () => {
                 title={content.hero.navBar.languageSelector.title}
                 ref={selectRef}
                 onChange={() => {
-                    router.push('.', undefined, {
+                    router.push(router.asPath, undefined, {
                         locale: selectRef.current.value,
                     });
                 }}
