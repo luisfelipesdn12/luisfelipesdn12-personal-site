@@ -8,7 +8,10 @@ const Hero: React.FC = () => {
     const content = useContent();
 
     return (
-        <HeroHeader pageTitle={content.hero.greeting}>
+        <HeroHeader
+            profileImageUrl={content.hero.profileImageUrl}
+            pageTitle={content.hero.greeting}
+        >
             <Description />
             <LinksAndResourses />
         </HeroHeader>

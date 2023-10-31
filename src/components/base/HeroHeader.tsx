@@ -19,13 +19,7 @@ export const HeroWrapper = styled.header`
     }
 `;
 
-const HeroGreeting = styled.h1`
-    margin-top: 4rem;
-    margin-bottom: 1.25rem;
-`;
-
 const PageTitle = styled.h1`
-    margin-top: 4rem;
     margin-bottom: 1.25rem;
 `;
 
@@ -38,21 +32,32 @@ const Description = styled.p`
     }
 `;
 
+const ProfileImage = styled.img`
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+    border: ${props => props.theme.colors.text.title} 0.2rem solid;
+    background-color: ${props => props.theme.colors.text.title};
+`;
+
 interface HeroHeaderProps {
     pageTitle?: string | ReactNode;
     description?: string | ReactNode;
+    profileImageUrl?: string;
     children?: ReactNode;
 }
 
 const HeroHeader: React.FC<HeroHeaderProps> = ({
     pageTitle,
     description,
+    profileImageUrl,
     children,
 }) => {
     return (
         <HeroWrapper>
             <div>
                 <NavBar />
+                {profileImageUrl ? <ProfileImage src={profileImageUrl}></ProfileImage> : null}
                 {pageTitle ? <PageTitle>{pageTitle}</PageTitle> : null}
                 {description ? <Description>{description}</Description> : null}
                 {children}

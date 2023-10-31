@@ -10,6 +10,7 @@ const Wrapper = styled.nav`
     margin: 1rem 0;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 4rem;
 
     @media (min-width: 768px) {
         max-width: 768px;

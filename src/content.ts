@@ -24,8 +24,9 @@ export const content: LocatedContent = {
                 },
             },
             greeting: "Hello, I'm Luis Felipe!",
+            profileImageUrl: "https://github.com/luisfelipesdn12.png",
             description: {
-                prefix: "I'm a computer science student and I can code for: automations, websites, machine learning, APIs and data science. My main languages are ",
+                prefix: "I'm a information system student and I can code for: automations, websites, machine learning, APIs and data science. My main languages are ",
                 languages: ['TypeScript', 'Python', 'Go'],
                 and: 'and',
                 suffix: '.',
@@ -192,6 +193,14 @@ export const content: LocatedContent = {
                 'My background in formal education, in addition to technologies courses and studies of interest.',
             list: [
                 {
+                    imageUrl: '/education/mackenzie.png',
+                    name: "Information Systems",
+                    description: "Bachelor's degree in Information Systems, a course that involves both technical and managerial bases and soft-skills.",
+                    institution: "Universidade Presbiteriana Mackenzie",
+                    hours: "1 de 8 sem.",
+                    link: "https://www.mackenzie.br/graduacao/sao-paulo-higienopolis/sistemas-de-informacao/"
+                },
+                {
                     imageUrl: '/education/python-curso-em-video.jpg',
                     name: 'Python 3 Course',
                     description:
@@ -236,21 +245,16 @@ export const content: LocatedContent = {
                     hours: 22,
                     link: 'https://www.youtube.com/playlist?list=PLCKpcjBB_VlBsxJ9IseNxFllf-UFEXOdg',
                 },
-                {
-                    imageUrl: '/education/high-school.jpg',
-                    name: 'High School',
-                    description:
-                        'Brazilian High School. Subjects as Portuguese Language, Mathematics, Chemistry, Sociology, Arts, Physics, English Language, Geography, Philosophy, Biology, etc.',
-                    institution: 'State of Sao Paulo',
-                    hours: '1050 of 3150',
-                    link: 'https://inova.educacao.sp.gov.br/',
-                },
             ],
         },
         footer: {
             prefix: 'Developed with Next.js, React.js and TypeScript by ',
             author: 'Luis Felipe',
             suffix: '.',
+        },
+        common: {
+            seeMore: "See more",
+            clickToSeeMore: "Click here to see the complete set of",
         },
     },
     'pt-BR': {
@@ -270,8 +274,9 @@ export const content: LocatedContent = {
                 },
             },
             greeting: 'Olá, eu sou o Luis Felipe!',
+            profileImageUrl: "https://github.com/luisfelipesdn12.png",
             description: {
-                prefix: 'Sou um estudante de ciência da computação e posso desenvolver: automações, sites, machine learning, APIs e data science. Minhas principais linguagens de programação são ',
+                prefix: 'Sou um estudante de sistemas de informação e posso desenvolver: automações, sites, machine learning, APIs e data science. Minhas principais linguagens de programação são ',
                 languages: ['TypeScript', 'Python', 'Go'],
                 and: 'e',
                 suffix: '.',
@@ -438,6 +443,14 @@ export const content: LocatedContent = {
                 'Minha formação em educação formal, além de cursos de tecnologia e estudos de interesse.',
             list: [
                 {
+                    imageUrl: '/education/mackenzie.png',
+                    name: "Sistemas de Informação",
+                    description: "Bacharel em Sistemas de Informação, curso que envolve tanto as bases técnicas quanto em gestão e soft-skills.",
+                    institution: "Universidade Presbiteriana Mackenzie",
+                    hours: "1 de 8 sem.",
+                    link: "https://www.mackenzie.br/graduacao/sao-paulo-higienopolis/sistemas-de-informacao/"
+                },
+                {
                     imageUrl: '/education/python-curso-em-video.jpg',
                     name: 'Curso de Python 3',
                     description:
@@ -482,21 +495,16 @@ export const content: LocatedContent = {
                     hours: 22,
                     link: 'https://www.youtube.com/playlist?list=PLCKpcjBB_VlBsxJ9IseNxFllf-UFEXOdg',
                 },
-                {
-                    imageUrl: '/education/high-school.jpg',
-                    name: 'Ensino Médio',
-                    description:
-                        'Ensino Médio Brasileiro. Disciplinas como Língua Portuguesa, Matemática, Química, Sociologia, Artes, Física, Língua Inglesa, Geografia, Filosofia, Biologia, etc.',
-                    institution: 'Estado de São Paulo',
-                    hours: '1050 de 3150',
-                    link: 'https://inova.educacao.sp.gov.br/',
-                },
             ],
         },
         footer: {
             prefix: 'Desenvolvido com Next.js, React.js e TypeScript por ',
             author: 'Luis Felipe',
             suffix: '.',
+        },
+        common: {
+            seeMore: "Ver mais",
+            clickToSeeMore: "Clique aqui para ver a lista completa de",
         },
     },
 };

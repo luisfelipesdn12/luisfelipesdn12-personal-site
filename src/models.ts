@@ -15,6 +15,7 @@ interface HeroSectionContent {
         };
     };
     greeting: string;
+    profileImageUrl: string;
     description: {
         prefix: string;
         languages: string[];
@@ -59,6 +60,11 @@ interface Footer {
     suffix: string;
 }
 
+interface Common {
+    seeMore: string;
+    clickToSeeMore: string;
+}
+
 export interface Content {
     meta: MetaTagsContent;
     hero: HeroSectionContent;
@@ -66,4 +72,5 @@ export interface Content {
     projects: BaseSectionContent;
     education: BaseSectionContent<Course>;
     footer: Footer;
+    common: Common;
 }
