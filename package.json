@@ -1,0 +1,33 @@
+{
+    "name": "luisfelipesdn12-personal-site",
+    "version": "1.0.0",
+    "description": "My personal website",
+    "repository": "git@github.com:luisfelipesdn12/luisfelipesdn12-personal-site.git",
+    "author": "Luis Felipe <luisfelipesdn12@gmail.com>",
+    "license": "MIT",
+    "private": false,
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start",
+        "lint": "yarn prettier --check --ignore-unknown ./pages/** ./src/**",
+        "lint:fix": "yarn prettier --write --ignore-unknown ./pages/** ./src/**"
+    },
+    "dependencies": {
+        "next": "^14.0.1",
+        "next-dark-mode": "^3.0.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "styled-components": "^6.1.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.8.10",
+        "@types/react": "^18.2.33",
+        "@types/styled-components": "^5.1.29",
+        "prettier": "^2.3.0",
+        "typescript": "^5.2.2"
+    },
+    "engines": {
+        "node": "18.x"
+    }
+}
