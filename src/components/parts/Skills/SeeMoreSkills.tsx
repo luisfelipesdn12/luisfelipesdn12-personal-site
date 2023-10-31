@@ -60,6 +60,7 @@ const SeeMoreSkills: React.FC<SeeMoreSkillsProps> = ({ nextSkills }) => {
                 {nextSkills.slice(0, 9).map((skill, index) => (
                     <SkillIcon index={index}>
                         <Image
+                            alt={skill.name}
                             src={skill.imageUrl}
                             width={30}
                             height={30}

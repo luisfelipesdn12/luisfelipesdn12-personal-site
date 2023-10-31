@@ -60,6 +60,7 @@ const SeeMoreProjects: React.FC<SeeMoreProjectsProps> = ({ nextProjects }) => {
                 {nextProjects.slice(0, 9).map((project, index) => (
                     <ProjectIcon index={index}>
                         <Image
+                            alt={project.name}
                             src={project.imageUrl}
                             width={30}
                             height={30}

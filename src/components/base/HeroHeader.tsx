@@ -41,6 +41,7 @@ const Description = styled.p`
 interface HeroHeaderProps {
     pageTitle?: string | ReactNode;
     description?: string | ReactNode;
+    children?: ReactNode;
 }
 
 const HeroHeader: React.FC<HeroHeaderProps> = ({
