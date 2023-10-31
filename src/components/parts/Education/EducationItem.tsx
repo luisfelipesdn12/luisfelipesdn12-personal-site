@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BaseCard } from '../../../models';
+import { BaseCard, Course } from '../../../models';
+import DivisorLine from '../../base/DivisorLine';
 
 const Wrapper = styled.li`
     cursor: pointer;
@@ -37,8 +38,20 @@ const Description = styled.div`
     }
 `;
 
+const Workload = styled.div`
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    justify-content: space-between;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #1E40AF;
+`;
+
 interface EducationItemProps {
-    education: BaseCard;
+    education: Course;
 }
 
 const EducationItem: React.FC<EducationItemProps> = ({ education }) => (
@@ -49,8 +62,13 @@ const EducationItem: React.FC<EducationItemProps> = ({ education }) => (
         />
         <Description>
             <h1>{education.name}</h1>
-            <p>{education.description}</p>
+            <p dangerouslySetInnerHTML={{ __html: education.description }}></p>
         </Description>
+        <DivisorLine />
+        <Workload>
+            <p>{education.institution}</p>
+            <p>{typeof education.hours === "number" ? `${education.hours} h` : education.hours}</p>
+        </Workload>
     </Wrapper>
 );
 

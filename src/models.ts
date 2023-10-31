@@ -46,7 +46,7 @@ interface BaseSectionContent<CardListType extends BaseCard = BaseCard> {
     list?: CardListType[];
 }
 
-interface Course extends BaseCard {
+export interface Course extends BaseCard {
     institution: string;
     hours: number | string;
 }

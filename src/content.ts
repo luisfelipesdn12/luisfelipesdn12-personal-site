@@ -196,8 +196,8 @@ export const content: LocatedContent = {
                     imageUrl: '/education/mackenzie.png',
                     name: "Information Systems",
                     description: "Bachelor's degree in Information Systems, a course that involves both technical and managerial bases and soft-skills.",
-                    institution: "Universidade Presbiteriana Mackenzie",
-                    hours: "1 de 8 sem.",
+                    institution: "Mackenzie University",
+                    hours: "1/8 sem.",
                     link: "https://www.mackenzie.br/graduacao/sao-paulo-higienopolis/sistemas-de-informacao/"
                 },
                 {
@@ -446,8 +446,8 @@ export const content: LocatedContent = {
                     imageUrl: '/education/mackenzie.png',
                     name: "Sistemas de Informação",
                     description: "Bacharel em Sistemas de Informação, curso que envolve tanto as bases técnicas quanto em gestão e soft-skills.",
-                    institution: "Universidade Presbiteriana Mackenzie",
-                    hours: "1 de 8 sem.",
+                    institution: "Universidade Mackenzie",
+                    hours: "1/8 sem.",
                     link: "https://www.mackenzie.br/graduacao/sao-paulo-higienopolis/sistemas-de-informacao/"
                 },
                 {
