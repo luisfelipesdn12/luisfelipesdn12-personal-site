@@ -46,8 +46,8 @@ const RoundButton: React.FC<RoundButtonProps> = ({
             <Image
                 src={imageUrl}
                 alt={alt}
-                width="100%"
-                height="100%"
+                width={100}
+                height={100}
                 placeholder="blur"
             />
         </Wrapper>
