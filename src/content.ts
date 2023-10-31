@@ -248,7 +248,7 @@ export const content: LocatedContent = {
             ],
         },
         footer: {
-            prefix: 'Developed with HTML, CSS and TypeScript by ',
+            prefix: 'Developed with Next.js, React.js and TypeScript by ',
             author: 'Luis Felipe',
             suffix: '.',
         },
@@ -494,7 +494,7 @@ export const content: LocatedContent = {
             ],
         },
         footer: {
-            prefix: 'Desenvolvido com HTML, CSS e TypeScript por ',
+            prefix: 'Desenvolvido com Next.js, React.js e TypeScript por ',
             author: 'Luis Felipe',
             suffix: '.',
         },
