@@ -26,7 +26,7 @@ export const content: LocatedContent = {
             greeting: "Hello, I'm Luis Felipe!",
             profileImageUrl: "https://github.com/luisfelipesdn12.png",
             description: {
-                prefix: "I'm a information system student and I can code for: automations, websites, machine learning, APIs and data science. My main languages are ",
+                prefix: "I'm a Full Stack developer, degree in systems development, information system student and I can code for: automations, websites, machine learning, APIs and data science. My main languages are ",
                 languages: ['TypeScript', 'Python', 'Go'],
                 and: 'and',
                 suffix: '.',
@@ -276,7 +276,7 @@ export const content: LocatedContent = {
             greeting: 'Olá, eu sou o Luis Felipe!',
             profileImageUrl: "https://github.com/luisfelipesdn12.png",
             description: {
-                prefix: 'Sou um estudante de sistemas de informação e posso desenvolver: automações, sites, machine learning, APIs e data science. Minhas principais linguagens de programação são ',
+                prefix: 'Sou um desenvolvedor Full Stack Pleno, formado em desenvolvimento de sistemas, estudante de sistemas de informação e posso desenvolver: automações, sites, machine learning, APIs e data science. Minhas principais linguagens de programação são ',
                 languages: ['TypeScript', 'Python', 'Go'],
                 and: 'e',
                 suffix: '.',
