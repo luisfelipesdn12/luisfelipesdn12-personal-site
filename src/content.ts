@@ -144,6 +144,27 @@ export const content: LocatedContent = {
                 'My knowledge applied in personal projects. Click in the project to see more.',
             list: [
                 {
+                    imageUrl: '/projects/pytosis_demo.gif',
+                    name: 'Pytosis Simulator',
+                    description:
+                        "A simple simulator to the cell's reproduction using Python and Pygame.",
+                    link: 'https://github.com/luisfelipesdn12/pytosis-simulator',
+                },
+                {
+                    imageUrl: '/projects/wca-comp-alert.png',
+                    name: 'WCA Competitions Alert',
+                    description:
+                        "A script which send an e-mail when there's a new WCA (World Cube Association) competition. Integrates the WCA's and the Google Sheets API, the subscription is made by the Google Forms.",
+                    link: 'https://github.com/luisfelipesdn12/Alerta-de-Campeonatos-WCA',
+                },
+                {
+                    imageUrl: '/projects/trabalhos-escolares-automaticos.jpg',
+                    name: 'Automatic schoolwork',
+                    description:
+                        'A program that, from a subject, extracts content from Wikipedia, summarizes and adds images, then formats and exports a document in the form of schoolwork.',
+                    link: 'https://github.com/luisfelipesdn12/trabalhos-escolares-automaticos',
+                },
+                {
                     imageUrl: '/projects/prime-numbers.jpg',
                     name: 'Infinite prime numbers generator',
                     description:
@@ -156,27 +177,6 @@ export const content: LocatedContent = {
                     description:
                         'A website that shows my progress when watching The Office series. Created with the purpose of showing my friends how much they can give me spoilers :)',
                     link: 'https://github.com/luisfelipesdn12/where-am-i-in-the-office',
-                },
-                {
-                    imageUrl: '/projects/pytosis_demo.gif',
-                    name: 'Pytosis Simulator',
-                    description:
-                        "A simple simulator to the cell's reproduction using Python and Pygame.",
-                    link: 'https://github.com/luisfelipesdn12/pytosis-simulator',
-                },
-                {
-                    imageUrl: '/projects/wca-comp-alert.png',
-                    name: 'WCA Competitions Alert',
-                    description:
-                        "A script which send an e-mail when there's a new WCA competition. Integrates the WCA's and the Google Sheets API, the subscription is made by the Google Forms.",
-                    link: 'https://github.com/luisfelipesdn12/Alerta-de-Campeonatos-WCA',
-                },
-                {
-                    imageUrl: '/projects/trabalhos-escolares-automaticos.jpg',
-                    name: 'Automatic schoolwork',
-                    description:
-                        'A program that, from a subject, extracts content from Wikipedia, summarizes and adds images, then formats and exports a document in the form of schoolwork.',
-                    link: 'https://github.com/luisfelipesdn12/trabalhos-escolares-automaticos',
                 },
                 {
                     imageUrl: '/projects/gihub-demo.jpg',
@@ -394,6 +394,27 @@ export const content: LocatedContent = {
                 'Meus conhecimentos aplicados em projetos pessoais. Clique no projeto para ver mais.',
             list: [
                 {
+                    imageUrl: '/projects/pytosis_demo.gif',
+                    name: 'Pytosis Simulator',
+                    description:
+                        'Um simulador simples da reprodução celular, utilizando Python e Pygame.',
+                    link: 'https://github.com/luisfelipesdn12/pytosis-simulator',
+                },
+                {
+                    imageUrl: '/projects/wca-comp-alert.png',
+                    name: 'Alerta de Campeonatos WCA',
+                    description:
+                        'Um script que envia um e-mail quando há uma nova competição da WCA (Associação Mundal de Cubo Mágico). Integra as APIs da WCA e a do Planilhas Google, a inscrição é feita pelo Formulários Google.',
+                    link: 'https://github.com/luisfelipesdn12/Alerta-de-Campeonatos-WCA',
+                },
+                {
+                    imageUrl: '/projects/trabalhos-escolares-automaticos.jpg',
+                    name: 'Trabalhos Escolares Automáticos',
+                    description:
+                        'Um programa que, a partir de um assunto, extrai conteúdo da Wikipedia, resume e adiciona imagens, depois formata e exporta um documento em forma de trabalho escolar.',
+                    link: 'https://github.com/luisfelipesdn12/trabalhos-escolares-automaticos',
+                },
+                {
                     imageUrl: '/projects/prime-numbers.jpg',
                     name: 'Gerador infinito de números primos',
                     description:
@@ -406,27 +427,6 @@ export const content: LocatedContent = {
                     description:
                         'Um site que mostra meu progresso ao assistir a série The Office. Criado com a proposta de mostrar aos meus amigos o quanto eles podem me dar spoilers:)',
                     link: 'https://github.com/luisfelipesdn12/where-am-i-in-the-office',
-                },
-                {
-                    imageUrl: '/projects/pytosis_demo.gif',
-                    name: 'Pytosis Simulator',
-                    description:
-                        'Um simulador simples da reprodução celular, utilizando Python e Pygame.',
-                    link: 'https://github.com/luisfelipesdn12/pytosis-simulator',
-                },
-                {
-                    imageUrl: '/projects/wca-comp-alert.png',
-                    name: 'Alerta de Campeonatos WCA',
-                    description:
-                        'Um script que envia um e-mail quando há uma nova competição da WCA. Integra as APIs da WCA e a do Planilhas Google, a inscrição é feita pelo Formulários Google.',
-                    link: 'https://github.com/luisfelipesdn12/Alerta-de-Campeonatos-WCA',
-                },
-                {
-                    imageUrl: '/projects/trabalhos-escolares-automaticos.jpg',
-                    name: 'Trabalhos Escolares Automáticos',
-                    description:
-                        'Um programa que, a partir de um assunto, extrai conteúdo da Wikipedia, resume e adiciona imagens, depois formata e exporta um documento em forma de trabalho escolar.',
-                    link: 'https://github.com/luisfelipesdn12/trabalhos-escolares-automaticos',
                 },
                 {
                     imageUrl: '/projects/gihub-demo.jpg',
