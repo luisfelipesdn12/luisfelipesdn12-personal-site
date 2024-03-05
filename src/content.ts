@@ -144,6 +144,13 @@ export const content: LocatedContent = {
                 'My knowledge applied in personal projects. Click in the project to see more.',
             list: [
                 {
+                    imageUrl: '/projects/brigadeiro-maroto.png',
+                    name: 'Brigadeiro Maroto',
+                    description:
+                        "An e-commerce I've made for my friend to sell brigadeiros (Brazilian desert) online.",
+                    link: 'https://github.com/luisfelipesdn12/brigadeiro-maroto-site',
+                },
+                {
                     imageUrl: '/projects/pytosis_demo.gif',
                     name: 'Pytosis Simulator',
                     description:
@@ -393,6 +400,13 @@ export const content: LocatedContent = {
             description:
                 'Meus conhecimentos aplicados em projetos pessoais. Clique no projeto para ver mais.',
             list: [
+                {
+                    imageUrl: '/projects/brigadeiro-maroto.png',
+                    name: 'Brigadeiro Maroto',
+                    description:
+                        "Um e-commerce que eu fiz para um amigo meu vender brigadeiros online.",
+                    link: 'https://github.com/luisfelipesdn12/brigadeiro-maroto-site',
+                },
                 {
                     imageUrl: '/projects/pytosis_demo.gif',
                     name: 'Pytosis Simulator',
