@@ -4,6 +4,7 @@ import withDarkMode, { useDarkMode } from 'next-dark-mode';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme, ThemeProps } from '../src/theme';
 import { useContent } from '../src/content';
+import { Analytics } from "@vercel/analytics/react"
 
 const GlobalStyle = createGlobalStyle<{ theme: ThemeProps }>`
     *, ::after, ::before {
@@ -209,6 +210,7 @@ const App = ({ Component, pageProps }) => {
             <GlobalStyle theme={theme} />
             <ThemeProvider theme={theme}>
                 <Component {...pageProps} />
+                <Analytics />
             </ThemeProvider>
         </>
     );

@@ -14,6 +14,7 @@
         "lint:fix": "yarn prettier --write --ignore-unknown ./pages/** ./src/**"
     },
     "dependencies": {
+        "@vercel/analytics": "^1.2.2",
         "next": "^14.0.1",
         "next-dark-mode": "^3.0.0",
         "react": "^18.2.0",
