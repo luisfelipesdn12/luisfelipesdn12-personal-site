@@ -144,6 +144,13 @@ export const content: LocatedContent = {
                 'My knowledge applied in personal projects. Click in the project to see more.',
             list: [
                 {
+                    imageUrl: '/projects/bsky-suggest.png',
+                    name: 'Bluesky Follow Suggestion',
+                    description:
+                        "Score-based follower suggestion for bluesky!",
+                    link: 'https://github.com/luisfelipesdn12/bluesky-followers-suggest',
+                },
+                {
                     imageUrl: '/projects/brigadeiro-maroto.png',
                     name: 'Brigadeiro Maroto',
                     description:
@@ -400,6 +407,13 @@ export const content: LocatedContent = {
             description:
                 'Meus conhecimentos aplicados em projetos pessoais. Clique no projeto para ver mais.',
             list: [
+                {
+                    imageUrl: '/projects/bsky-suggest.png',
+                    name: 'Bluesky Follow Suggestion',
+                    description:
+                        "Sugestão de seguidores para Bluesky com um sistema de score!",
+                    link: 'https://github.com/luisfelipesdn12/bluesky-followers-suggest',
+                },
                 {
                     imageUrl: '/projects/brigadeiro-maroto.png',
                     name: 'Brigadeiro Maroto',
