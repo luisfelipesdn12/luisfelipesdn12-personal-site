@@ -1,0 +1,224 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://luisf.dev/}{\Large Luis Felipe Santos do Nascimento}} & Email : \href{mailto:luisfelipesdn12@gmail.com}{luisfelipesdn12@gmail.com}\\
+  Desenvolvedor Full Stack Sênior $\cdot$ Python / Go / Node -- São Paulo, Brasil & Telefone : +55 11 95884-3078 \\
+  \href{https://luisf.dev/}{https://luisf.dev} & \\
+\end{tabular*}
+
+
+%-----------PERFIL-----------------
+\section{Perfil}
+\small Desenvolvedor full stack sênior com base sólida em \textbf{TypeScript, Python e Go}. Experiência em APIs RESTful, automações, \textbf{web scraping}, integrações com modelos de \textbf{IA/LLMs}, interfaces internas e plataformas \textit{data-driven} em escala (milhões de dispositivos/usuários). Atua transformando problemas de negócio em soluções técnicas simples, escaláveis e funcionais, com mentalidade de melhoria contínua e colaboração.
+\vspace{2pt}
+
+
+%-----------FORMAÇÃO ACADÊMICA-----------------
+\section{Formação Acadêmica}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universidade Presbiteriana Mackenzie}{São Paulo, Brasil}
+      {Bacharel em Sistemas de Informação; Em andamento}{2023 -- 2027}
+    \resumeSubheading
+      {ETEC Basilides de Godoy}{São Paulo, Brasil}
+      {Técnico em Desenvolvimento de Sistemas; Formado}{2021 -- 2022}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIÊNCIA-----------------
+\section{Experiência}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Painel TAP}{São Paulo, Brasil}
+      {Desenvolvedor Full Stack Sênior}{mar. 2025 -- atualmente}
+      \resumeItemListStart
+        \resumeItem{Desenvolvimento Web Full-Stack}
+          {Desenvolvimento full-stack de plataforma SaaS com Pyhton, Node, expondo APIs RESTful, interfaces internas e dashboards \textit{data-driven}. Automações, web scraping e integrações com modelos de IA/LLMs, com foco em arquitetura, performance e escalabilidade.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Allcom Telecom}{São Paulo, Brasil}
+      {Desenvolvedor Full Stack Pleno}{jun. 2024 -- mar. 2025}
+      \resumeItemListStart
+        \resumeItem{Plataforma IoT em escala (4M+ dispositivos, 8.000+ clientes)}
+          {Atuação em produtos da maior operadora de IoT da América Latina, com parceiros estratégicos como \textbf{Claro, Vivo, Qualcomm e Nokia}. Desenvolvimento web full-stack com Next.js, Node, React, Laravel, Python, Docker e bancos relacionais. APIs RESTful, automações, web scraping e interfaces internas para segmentos de meios de pagamento (POS), smart cities, utilities, telemetria e frotas.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Origin9}{São Paulo, Brasil}
+      {Desenvolvedor Full Stack Pleno}{dez. 2023 -- jun. 2024}
+      \resumeItemListStart
+        \resumeItem{Desenvolvimento Web Full-Stack}
+          {Desenvolvimento web front e back-end com Node, Python, React e Docker. APIs RESTful, automações, web scraping e bancos relacionais sob metodologias ágeis.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {YOUDevelop}{São Paulo, Brasil}
+      {Desenvolvedor Full Stack Pleno}{out. 2021 -- dez. 2023}
+      \resumeItemListStart
+        \resumeItem{Desenvolvimento Web Full-Stack}
+          {Desenvolvimento web front e back-end com Next, React, Firebase e Supabase. Construção de APIs RESTful, integrações de dados e entrega contínua em metodologias ágeis.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Morph}{São Paulo, Brasil}
+      {Full Stack Web \& Mobile Engineer}{dez. 2021 -- jun. 2022}
+      \resumeItemListStart
+        \resumeItem{Desenvolvimento Mobile}
+          {Desenvolvimento ágil em Flutter para aplicações Web e Mobile.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Zyndicate}{São Paulo, Brasil}
+      {Full Stack Engineer}{dez. 2020 -- dez. 2021}
+      \resumeItemListStart
+        \resumeItem{Desenvolvimento Web}
+          {Desenvolvimento Web utilizando GitHub Flow, ReactJS, NextJS, GraphQL, UI/UX, CI/CD, Metodologias Ágeis e conversação em inglês.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Nooio}{São Paulo, Brasil}
+      {Backend Developer}{dez. 2020 -- mai. 2021}
+      \resumeItemListStart
+        \resumeItem{Automações, Scraping e APIs}
+          {Desenvolvimento de APIs RESTful com Node/Express e scripts em Python para automações e web scraping. Desenvolvimento Guiado por Testes (TDD) e deploy em AWS.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------CURSOS-----------------
+\section{Cursos}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Linguagem de Programação Go -- Aprenda Go (Ellen Körbes)}
+      {Estruturas de dados, interfaces e polimorfismo, concorrência e paralelismo, tratamento de erros, testes e benchmarks. 2020 -- 22h/aula.}
+    \resumeSubItem{Curso de Python 3 -- Curso em Vídeo (Gustavo Guanabara)}
+      {Fundamentos sólidos da linguagem, de variáveis a tratamento de erros. 2020 -- 120h/aula.}
+    \resumeSubItem{Curso Backend Developer -- Digital Innovation One}
+      {Arquitetura de Sistemas, Java, Spring Boot, testes, SQL, Node.js com Express, melhores práticas com APIs e LGPD. 2020 -- 100h/aula.}
+  \resumeSubHeadingListEnd
+
+
+%-----------CERTIFICAÇÕES-----------------
+\section{Certificações}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Docker: criando e gerenciando containers}{Fundamentos de containers, imagens, volumes e orquestração com Docker.}
+    \resumeSubItem{Bootcamp Backend Developer Carrefour}{Programa intensivo de desenvolvimento backend com foco em Java, Spring Boot e melhores práticas de mercado.}
+    \resumeSubItem{Desenvolvimento back-end com Node.js}{Construção de APIs e serviços com Node.js e Express.}
+    \resumeSubItem{Desenvolvimento avançado com JavaScript ES6}{Recursos modernos do JavaScript (ES6+), padrões e melhores práticas.}
+    \resumeSubItem{Expert Lesson: Introdução à LGPD}{Princípios da Lei Geral de Proteção de Dados e impactos no desenvolvimento de software.}
+  \resumeSubHeadingListEnd
+
+
+%-----------RECONHECIMENTOS-----------------
+\section{Reconhecimentos}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Finalista da OBI (Olimpíada Brasileira de Informática)}{Classificado para a fase final da competição nacional de algoritmos e programação.}
+    \resumeSubItem{Melhor aluno do curso de Desenvolvimento de Sistemas}{Reconhecimento de melhor aluno da turma técnica em Desenvolvimento de Sistemas -- ETEC Basilides de Godoy.}
+  \resumeSubHeadingListEnd
+
+%
+%--------HABILIDADES------------
+\section{Habilidades}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Linguagens}{: Python, Go, Node.js, TypeScript, JavaScript (ES6+), Java, Dart, Arduino}
+   }
+   \item{
+     \textbf{Dados, IA \& Scraping}{: Pandas, BeautifulSoup, Scrapy, LLMs / IA aplicada, Data Visualization, bancos relacionais (SQL), Firebase, Supabase}
+   }
+   \item{
+     \textbf{Web \& APIs}{: APIs RESTful, GraphQL, Next.js, React, Express, Laravel, Flutter, UI/UX, Acessibilidade digital}
+   }
+   \item{
+     \textbf{Infra \& Cloud}{: AWS, Docker, CI/CD, Git/GitHub, Arquitetura de Sistemas}
+   }
+   \item{
+     \textbf{Práticas}{: TDD, Automação, Metodologias Ágeis (SCRUM), LGPD}
+   }
+   \item{
+     \textbf{Idiomas}{: Português (nativo), Inglês (avançado -- Full Professional)}
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
